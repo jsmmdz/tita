@@ -25,10 +25,10 @@ Por eso la Ronda 1 las corre a las seis en dos motores. El detalle está en
 
 ## Plan de la Ronda 1
 
-12 generaciones, 14.1 créditos:
+12 generaciones, 8.7 créditos:
 
-- Las 6 con `model: "seed_audio"` — 1.6 créditos cada una.
-- Las 6 con `model: "text2speech_v2"`, `variant: "elevenlabs"` — 0.75 cada una.
+- Las 6 con `model: "seed_audio"` — 1.0 crédito cada una.
+- Las 6 con `model: "text2speech_v2"`, `variant: "elevenlabs"` — 0.45 cada una.
 
 Mismo `prompt` en las doce: el de `prompts/texto-de-prueba.md`, sin cambiarle
 una coma. Si el texto varía, la comparación no vale.

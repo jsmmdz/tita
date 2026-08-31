@@ -49,11 +49,11 @@ El detalle está en `investigacion/modelos-y-flujo.md`. En corto:
 Las seis finalistas se corren en **dos motores**, porque el riesgo real no es
 la voz sino el idioma — ninguna herramienta dice en qué idioma habla cada voz:
 
-- `seed_audio` — 1.6 créditos por línea. Único con `pitch_rate`.
-- `text2speech_v2` + `variant: "elevenlabs"` — 0.75. Mejor apuesta para
+- `seed_audio` — 1.0 crédito por línea. Único con `pitch_rate`.
+- `text2speech_v2` + `variant: "elevenlabs"` — 0.45. Mejor apuesta para
   español, pero sin parámetros de ajuste.
 
-Son 12 generaciones, **14.1 créditos**. Se lanzan con dos llamadas a
+Son 12 generaciones, **8.7 créditos**. Se lanzan con dos llamadas a
 `generate_audio_batch`, luego `jobs_wait`, luego **una sola**
 `show_generation_by_ids` con los 12.
 
@@ -87,5 +87,5 @@ antes de gastar en vez de decidir solo.
 - [ ] ¿Para qué piezas es la voz — reels, video institucional, señalética?
 - [ ] Revisar el Instagram de la UEB para el registro informal. No pude:
       el proxy bloquea el dominio.
-- [ ] Correr la Ronda 1 (12 generaciones, 14.1 créditos). Falta el visto bueno
+- [ ] Correr la Ronda 1 (12 generaciones, 8.7 créditos). Falta el visto bueno
       de Samuel para gastar.

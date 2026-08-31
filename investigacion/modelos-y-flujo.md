@@ -20,10 +20,10 @@ con `get_cost` sobre el texto real de `prompts/texto-de-prueba.md`.
 **`text2speech_v2` con `variant: "elevenlabs"` es el mejor candidato para
 español**, y además cuesta menos de la mitad que el default.
 
-| Modelo | Costo por línea de 20 s |
+| Modelo | Costo por línea de 12 s |
 |---|---|
-| `seed_audio` | **1.6 créditos** |
-| `text2speech_v2` + `elevenlabs` | **0.75 créditos** |
+| `seed_audio` | **1.0 crédito** |
+| `text2speech_v2` + `elevenlabs` | **0.45 créditos** |
 
 ElevenLabs es multilingüe de verdad, y ahí está el riesgo entero de este
 proyecto: el catálogo de voces es de nombres anglosajones y **ninguna herramienta
@@ -60,7 +60,7 @@ de arriba son el costo real.
 12 generaciones en total: 6 voces × `seed_audio` y las mismas 6 ×
 `text2speech_v2/elevenlabs`.
 
-**Costo: 14.1 créditos.** (6 × 1.6) + (6 × 0.75).
+**Costo: 8.7 créditos.** (6 × 1.0) + (6 × 0.45).
 
 Cómo se corre, en este orden:
 
@@ -105,6 +105,6 @@ Formato `wav` a `44100` Hz para la propuesta final. Para las pruebas el default
 
 ## Recomendación
 
-Corre la Ronda 1 completa, los dos motores. Son 14 créditos y resuelve de una
+Corre la Ronda 1 completa, los dos motores. Son menos de 9 créditos y resuelve de una
 la pregunta que de verdad importa — cuál motor habla español decente — en vez
 de descubrirla después de haber elegido voz.
