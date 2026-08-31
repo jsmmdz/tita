@@ -17,7 +17,9 @@ igual sin depender de la memoria de nadie.
 | `FLUJO.md` | El procedimiento paso a paso. Es el documento que manda. |
 | `investigacion/lenguaje-institucional-ueb.md` | Quién es Tita y cómo habla la UEB. La base de todo lo demás. |
 | `prompts/texto-de-prueba.md` | El texto con el que se audicionan las voces. |
+| `voces/finalistas.md` | Las seis preseleccionadas y el plan de prueba. |
 | `voces/catalogo.md` | Las 114 voces preset de Higgsfield con su `voice_id`. |
+| `investigacion/modelos-y-flujo.md` | Qué modelo usar, cuánto cuesta y cómo correr las pruebas. |
 | `referencias/README.md` | Cómo se registran los audios de referencia (por ruta, no por archivo). |
 | `registro/bitacora.md` | Qué se generó, con qué parámetros y qué resultó. |
 

@@ -29,8 +29,8 @@ números y fechas, el lema institucional y el remate.
 
 ## Fase 3 — Audicionar
 
-Samuel escucha las voces del catálogo en Higgsfield y preselecciona por oído.
-`voces/catalogo.md` tiene las 114 con su `voice_id`.
+Hecha. Samuel preseleccionó seis a oído: **Kaia, Zoe, Luna, Chloe, Giselle y
+Helena**. Están en `voces/finalistas.md` con su `voice_id`.
 
 **El catálogo no dice idioma ni acento**, solo nombre y género. Un nombre en
 español no garantiza que la voz hable español. Escuchar es el único método.
@@ -44,27 +44,21 @@ Criterios, en orden de peso:
 
 ## Fase 4 — Generar el texto de prueba con las finalistas
 
-`generate_audio`, una llamada por voz:
+El detalle está en `investigacion/modelos-y-flujo.md`. En corto:
 
-| Parámetro | Valor |
-|---|---|
-| `model` | `seed_audio` (Seed Audio 1.0, ByteDance) |
-| `voice_type` | `preset` |
-| `voice_id` | El de `voces/catalogo.md` |
-| `prompt` | El texto de `prompts/texto-de-prueba.md` |
+Las seis finalistas se corren en **dos motores**, porque el riesgo real no es
+la voz sino el idioma — ninguna herramienta dice en qué idioma habla cada voz:
 
-Para varias voces de una (2 a 12), `generate_audio_batch`.
+- `seed_audio` — 1.6 créditos por línea. Único con `pitch_rate`.
+- `text2speech_v2` + `variant: "elevenlabs"` — 0.75. Mejor apuesta para
+  español, pero sin parámetros de ajuste.
 
-Ajuste fino de `seed_audio`: `speech_rate` (velocidad), `pitch_rate` (tono),
-`loudness_rate` (volumen), `format`, `sample_rate`. Son los que se mueven
-cuando la voz "casi" queda.
+Son 12 generaciones, **14.1 créditos**. Se lanzan con dos llamadas a
+`generate_audio_batch`, luego `jobs_wait`, luego **una sola**
+`show_generation_by_ids` con los 12.
 
-**`get_cost: true` devuelve el costo sin generar nada.** Úsalo antes de lanzar
-una tanda.
-
-Si se quiere contrastar contra otro motor: `model: "text2speech_v2"` más
-`variant` (`elevenlabs`, `minimax`, `seed_speech`, `vibe_voice`, `cozy_voice`).
-El default se queda en `seed_audio`.
+`get_cost: true` da el costo sin generar nada — pero **no funciona dentro de un
+batch**, hay que preflightear con un `generate_audio` suelto.
 
 ## Fase 5 — Registrar y proponer
 
@@ -93,3 +87,5 @@ antes de gastar en vez de decidir solo.
 - [ ] ¿Para qué piezas es la voz — reels, video institucional, señalética?
 - [ ] Revisar el Instagram de la UEB para el registro informal. No pude:
       el proxy bloquea el dominio.
+- [ ] Correr la Ronda 1 (12 generaciones, 14.1 créditos). Falta el visto bueno
+      de Samuel para gastar.
