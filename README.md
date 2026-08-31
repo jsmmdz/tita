@@ -1,7 +1,10 @@
 # Tita — voz
 
-Respaldo del flujo para generar la nueva voz de **Tita**, la mascota de la
-Universidad El Bosque, usando Higgsfield.
+Respaldo del flujo para proponer la nueva voz de **Tita**, la comadreja
+mascota de la Universidad El Bosque, usando Higgsfield.
+
+**No se clona ninguna voz.** Se elige una del catálogo de presets y se
+propone.
 
 Este repo no guarda audio. Guarda **el flujo, los prompts, los parámetros y la
 bitácora de lo que se probó**, para que cualquier generación se pueda repetir
@@ -12,7 +15,9 @@ igual sin depender de la memoria de nadie.
 | Ruta | Qué es |
 |---|---|
 | `FLUJO.md` | El procedimiento paso a paso. Es el documento que manda. |
-| `prompts/guion-base.md` | Las líneas que se usan para probar y comparar voces. |
+| `investigacion/lenguaje-institucional-ueb.md` | Quién es Tita y cómo habla la UEB. La base de todo lo demás. |
+| `prompts/texto-de-prueba.md` | El texto con el que se audicionan las voces. |
+| `voces/catalogo.md` | Las 114 voces preset de Higgsfield con su `voice_id`. |
 | `referencias/README.md` | Cómo se registran los audios de referencia (por ruta, no por archivo). |
 | `registro/bitacora.md` | Qué se generó, con qué parámetros y qué resultó. |
 
@@ -29,4 +34,8 @@ igual sin depender de la memoria de nadie.
 
 ## Estado
 
-Arranque del repo: 2026-08-31. Todavía no se ha creado ninguna voz.
+Arranque del repo: 2026-08-31.
+
+Hecho: la investigación del lenguaje institucional, el texto de prueba y el
+catálogo de voces. Pendiente: la audición, que la hace Samuel a oído en
+Higgsfield.
