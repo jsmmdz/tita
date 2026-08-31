@@ -1,0 +1,17 @@
+# El repo es solo texto. El audio se queda afuera y se referencia por ruta.
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.opus
+*.mp4
+*.mov
+
+# Notas privadas que no salen de la máquina
+PRIVADO/
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
