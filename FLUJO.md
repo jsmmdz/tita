@@ -42,23 +42,22 @@ Criterios, en orden de peso:
 3. ¿Suena a estudiante o a comercial?
 4. ¿Cómo pronuncia "31 de octubre de 2023" y "UEB"?
 
-## Fase 4 — Generar el texto de prueba con las finalistas
+## Fase 4 — Probar
 
-El detalle está en `investigacion/modelos-y-flujo.md`. En corto:
+**Samuel lanza a mano en la interfaz de Higgsfield.** El detalle está en
+`investigacion/modelos-y-flujo.md`. En corto, dos rondas en vez de una:
 
-Las seis finalistas se corren en **dos motores**, porque el riesgo real no es
-la voz sino el idioma — ninguna herramienta dice en qué idioma habla cada voz:
+- **Ronda A — el motor.** Una sola voz, los cinco motores. 2.27 créditos.
+  Decide cuál motor habla español decente antes de mirar voces.
+- **Ronda B — la voz.** Las seis finalistas en el motor que ganó. Entre 0.42
+  y 6.0 créditos según cuál sea.
 
-- `seed_audio` — 1.0 crédito por línea. Único con `pitch_rate`.
-- `text2speech_v2` + `variant: "elevenlabs"` — 0.45. Mejor apuesta para
-  español, pero sin parámetros de ajuste.
+Total: **entre 2.7 y 8.3 créditos**, 11 generaciones.
 
-Son 12 generaciones, **8.7 créditos**. Se lanzan con dos llamadas a
-`generate_audio_batch`, luego `jobs_wait`, luego **una sola**
-`show_generation_by_ids` con los 12.
-
-`get_cost: true` da el costo sin generar nada — pero **no funciona dentro de un
-batch**, hay que preflightear con un `generate_audio` suelto.
+Se separa así porque son dos preguntas distintas y mezclarlas obliga a comparar
+todo contra todo. Los cinco motores por API son en realidad dos —`seed_audio`,
+`qwen_audio_tts` y `text2speech_v2` con cuatro motores adentro— y sus costos van
+de 0.07 a 1.0 crédito por línea. El default, Seed Audio, es el más caro.
 
 ## Fase 5 — Registrar y proponer
 
@@ -87,5 +86,4 @@ antes de gastar en vez de decidir solo.
 - [ ] ¿Para qué piezas es la voz — reels, video institucional, señalética?
 - [ ] Revisar el Instagram de la UEB para el registro informal. No pude:
       el proxy bloquea el dominio.
-- [ ] Correr la Ronda 1 (12 generaciones, 8.7 créditos). Falta el visto bueno
-      de Samuel para gastar.
+- [ ] Correr la Ronda A y luego la Ronda B. Las lanza Samuel a mano.

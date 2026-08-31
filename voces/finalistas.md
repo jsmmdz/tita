@@ -23,23 +23,23 @@ español**. Lo que ya sabemos es que el timbre gusta. Lo que no sabemos es lo
 Por eso la Ronda 1 las corre a las seis en dos motores. El detalle está en
 `investigacion/modelos-y-flujo.md`.
 
-## Plan de la Ronda 1
+## Plan de prueba
 
-12 generaciones, 8.7 créditos:
+Dos rondas, lanzadas a mano en la interfaz. El detalle en
+`investigacion/modelos-y-flujo.md`.
 
-- Las 6 con `model: "seed_audio"` — 1.0 crédito cada una.
-- Las 6 con `model: "text2speech_v2"`, `variant: "elevenlabs"` — 0.45 cada una.
+**Ronda A** — una sola de estas seis, en los cinco motores. Decide el motor.
+**Ronda B** — las seis, en el motor ganador. Decide la voz.
 
-Mismo `prompt` en las doce: el de `prompts/texto-de-prueba.md`, sin cambiarle
-una coma. Si el texto varía, la comparación no vale.
+Mismo `prompt` en todas: el de `prompts/texto-de-prueba.md`, sin cambiarle una
+coma. Si el texto varía, la comparación no vale.
 
 ## Cómo se decide
 
-Primero se compara **motor contra motor** con la misma voz: ¿cuál de los dos
-dice "su calidad y su sentido" como lo diría alguien de Bogotá? Eso descarta un
-motor entero y deja seis audios en vez de doce.
+En la Ronda A no se juzga la voz, se juzga el motor: cuál pronuncia español sin
+acento prestado y cuál dice "2023" sin trabarse. Con eso caen varios de una.
 
-Después se comparan las seis entre sí, con los criterios de
-`prompts/texto-de-prueba.md`. El lema es el que descarta.
+En la Ronda B sí se comparan las seis entre sí, con los criterios de
+`prompts/texto-de-prueba.md`.
 
 Resultados a `registro/bitacora.md`. Una fila por audio.
