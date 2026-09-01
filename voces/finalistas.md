@@ -28,7 +28,7 @@ Por eso la Ronda 1 las corre a las seis en dos motores. El detalle está en
 Dos rondas, lanzadas a mano en la interfaz. El detalle en
 `investigacion/modelos-y-flujo.md`.
 
-**Ronda A** — una sola de estas seis, en los cinco motores. Decide el motor.
+**Ronda A** — una sola de estas seis, en los cuatro motores. Decide el motor.
 **Ronda B** — las seis, en el motor ganador. Decide la voz.
 
 Mismo `prompt` en todas: el de `prompts/texto-de-prueba.md`, sin cambiarle una

@@ -47,17 +47,17 @@ Criterios, en orden de peso:
 **Samuel lanza a mano en la interfaz de Higgsfield.** El detalle está en
 `investigacion/modelos-y-flujo.md`. En corto, dos rondas en vez de una:
 
-- **Ronda A — el motor.** Una sola voz, los cinco motores. 2.27 créditos.
+- **Ronda A — el motor.** Una sola voz, los cuatro motores. 2.20 créditos.
   Decide cuál motor habla español decente antes de mirar voces.
-- **Ronda B — la voz.** Las seis finalistas en el motor que ganó. Entre 0.42
+- **Ronda B — la voz.** Las seis finalistas en el motor que ganó. Entre 1.8
   y 6.0 créditos según cuál sea.
 
-Total: **entre 2.7 y 8.3 créditos**, 11 generaciones.
+Total: **entre 4.0 y 8.2 créditos**, 10 generaciones.
 
 Se separa así porque son dos preguntas distintas y mezclarlas obliga a comparar
-todo contra todo. Los cinco motores por API son en realidad dos —`seed_audio`,
-`qwen_audio_tts` y `text2speech_v2` con cuatro motores adentro— y sus costos van
-de 0.07 a 1.0 crédito por línea. El default, Seed Audio, es el más caro.
+todo contra todo. **Qwen quedó descartado: su interfaz no deja seleccionar la
+voz.** Quedan cuatro motores, de 0.30 a 1.0 crédito por línea. El default, Seed
+Audio, es el más caro.
 
 ## Fase 5 — Registrar y proponer
 
