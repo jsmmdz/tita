@@ -42,22 +42,43 @@ Criterios, en orden de peso:
 3. ¿Suena a estudiante o a comercial?
 4. ¿Cómo pronuncia "31 de octubre de 2023" y "UEB"?
 
-## Fase 4 — Probar
+## Fase 3.5 — Elegir (hecha, 2026-09-07)
+
+**La voz de Tita es Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9`.
+Decisión de Samuel, tomada a oído sobre los previews, **sin correr la Ronda B**.
+
+Eso cambia el resto del flujo:
+
+- **La Ronda B queda cancelada.** Ya no hay seis voces que comparar.
+- **La Ronda A sigue en pie y ahora se corre con Giselle**, no con Luna. Sirve
+  para lo mismo que antes: decidir el motor. El motor no depende de la voz.
+- Queda sin correr el **filtro de lema** sobre Giselle. Está anotado en
+  `prompts/texto-de-prueba.md` y en `voces/finalistas.md`.
+
+## Fase 4 — Escribir los guiones (hecha, 2026-09-07)
+
+Están en `guiones/`. **Once capítulos**: uno por cada una de las diez
+facultades, más el de presentación. Cada uno es un diálogo entre Tita y el rol
+de esa facultad, de **treinta segundos como techo**.
+
+Las reglas de escritura de la serie están en `guiones/README.md` y salen de la
+investigación, no del gusto.
+
+## Fase 4.5 — Probar el motor
 
 **Samuel lanza a mano en la interfaz de Higgsfield.** El detalle está en
-`investigacion/modelos-y-flujo.md`. En corto, dos rondas en vez de una:
+`investigacion/modelos-y-flujo.md`.
 
-- **Ronda A — el motor.** Una sola voz, los cuatro motores. 2.20 créditos.
-  Decide cuál motor habla español decente antes de mirar voces.
-- **Ronda B — la voz.** Las seis finalistas en el motor que ganó. Entre 1.8
-  y 6.0 créditos según cuál sea.
+Queda **solo la Ronda A**: Giselle, el mismo texto, los cuatro motores.
+**2.20 créditos, cuatro generaciones.** Decide cuál motor habla español sin
+acento prestado.
 
-Total: **entre 4.0 y 8.2 créditos**, 10 generaciones.
+**Qwen quedó descartado: su interfaz no deja seleccionar la voz.** Quedan
+cuatro motores, de 0.30 a 1.0 crédito por línea. El default, Seed Audio, es el
+más caro — y el único con perillas, que es lo que importa si Giselle sale un
+poco rápida o un poco aguda.
 
-Se separa así porque son dos preguntas distintas y mezclarlas obliga a comparar
-todo contra todo. **Qwen quedó descartado: su interfaz no deja seleccionar la
-voz.** Quedan cuatro motores, de 0.30 a 1.0 crédito por línea. El default, Seed
-Audio, es el más caro.
+Con el motor decidido se graban los once capítulos de `guiones/`.
 
 ## Fase 5 — Registrar y proponer
 
@@ -86,4 +107,9 @@ antes de gastar en vez de decidir solo.
 - [ ] ¿Para qué piezas es la voz — reels, video institucional, señalética?
 - [ ] Revisar el Instagram de la UEB para el registro informal. No pude:
       el proxy bloquea el dominio.
-- [ ] Correr la Ronda A y luego la Ronda B. Las lanza Samuel a mano.
+- [ ] Correr la Ronda A **con Giselle**. La lanza Samuel a mano. La Ronda B
+      quedó cancelada: la voz ya está elegida.
+- [ ] Audicionar las voces de los roles que dialogan con Tita en `guiones/`.
+      Las propuestas de cada capítulo son propuestas, no decisiones.
+- [ ] Correr el filtro de lema sobre Giselle: una línea suelta del lema, para
+      saber si aguanta lo institucional.

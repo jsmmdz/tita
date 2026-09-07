@@ -22,6 +22,7 @@ igual sin depender de la memoria de nadie.
 | `investigacion/modelos-y-flujo.md` | Qué modelo usar, cuánto cuesta y cómo correr las pruebas. |
 | `referencias/README.md` | Cómo se registran los audios de referencia (por ruta, no por archivo). |
 | `registro/bitacora.md` | Qué se generó, con qué parámetros y qué resultó. |
+| `guiones/` | **La serie de cortos.** Un capítulo por facultad, más el de presentación. |
 
 ## Reglas de este repo
 
@@ -34,10 +35,26 @@ igual sin depender de la memoria de nadie.
   `voice_id` y sus parámetros. Un audio sin fila en la bitácora no se puede
   reproducir después.
 
+## La voz
+
+**Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9`, `voice_type: "preset"`.
+Elegida por Samuel el 2026-09-07. Es la voz de Tita en todo. Ver
+`voces/finalistas.md`.
+
 ## Estado
 
 Arranque del repo: 2026-08-31.
 
-Hecho: la investigación del lenguaje institucional, el texto de prueba y el
-catálogo de voces. Pendiente: la audición, que la hace Samuel a oído en
-Higgsfield.
+**Hecho:** la investigación del lenguaje institucional, el texto de prueba, el
+catálogo de voces, **la elección de la voz (Giselle)** y **los once guiones de
+la serie**.
+
+**Pendiente antes de generar audio:**
+
+1. **La Ronda A** — Giselle en los cuatro motores, para decidir cuál habla
+   español decente. La lanza Samuel a mano. Ver `investigacion/modelos-y-flujo.md`.
+2. **Confirmar la persona** — todo está escrito con Tita en primera persona y
+   lo oficial de la UEB la narra en tercera. Si va en tercera, se reescriben
+   los once guiones.
+3. **Las voces de los roles** — cada capítulo propone una, ninguna está
+   audicionada.
