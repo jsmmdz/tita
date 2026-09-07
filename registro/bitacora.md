@@ -53,13 +53,14 @@ Acá van los valores que ya se aprobaron y no se vuelven a discutir.
 | 2026-09-07 | **Tita habla en primera persona.** Cierra el pendiente que podía reescribir los once guiones. |
 | 2026-09-07 | **Los diez capítulos de facultad invitan a conocer la facultad y sus programas.** |
 | 2026-09-07 | **Orden de la serie:** Medicina primero, Creación y Comunicación segundo, y de ahí para abajo los demás. |
-| 2026-09-07 | **La primera prueba es doblaje, no TTS:** se graba con voz real y se convierte la pista de Tita con `voice_change`. Solo la de Tita. |
+| 2026-09-07 | **La serie se hace doblando voz real**, no generando desde texto. Motivo: expresividad — el TTS todavía suena robótico y los guiones viven de las pausas. Solo la pista de Tita se convierte. |
+| 2026-09-07 | **Las Rondas A y B quedan canceladas.** `voice_change` no tiene parámetro de modelo, así que no hay motor que elegir. |
+| 2026-09-07 | **Los videos de entrada pueden ir en negro total.** `voice_change` no mira la imagen. El micrófono sí importa. |
 
 ### Todavía sin decidir
 
-- **El método.** Doblaje con `voice_change` o texto a voz con `generate_audio`.
-  Lo resuelve la Prueba 1 sobre `01-medicina`. Ver `guiones/PRUEBA-01.md`.
-- **El motor**, y solo si la Prueba 1 falla. `voice_change` no tiene parámetro
-  de modelo, así que por el camino del doblaje no hay motor que elegir.
+- **Si `voice_change` conserva la dicción.** Lo resuelve la Prueba 1 sobre
+  `01-medicina`. Ver `guiones/PRUEBA-01.md`.
 - **Los nombres de los programas.** Ninguno verificado contra la página oficial.
+  Es el pendiente más urgente.
 - **Si Giselle aguanta el lema.** Filtro sin correr.

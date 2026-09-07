@@ -13,7 +13,7 @@ facultad: un estudiante, un docente, alguien en su práctica.
 | Voz de Tita | **Giselle** |
 | `voice_id` | `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
 | `voice_type` | `preset` |
-| Método | **PENDIENTE** — lo decide la Prueba 1. Ver `PRUEBA-01.md` |
+| Método | **Doblaje sobre voz real.** Decidido 2026-09-07. Ver `PRUEBA-01.md` |
 | Duración por capítulo | **máximo 30 segundos** |
 | Persona | **Primera persona.** Confirmado por Samuel, 2026-09-07 |
 | Tema de los diez de facultad | **Invitar a conocer la facultad y sus programas** |
@@ -86,8 +86,12 @@ prueba que decide todo, y está en `PRUEBA-01.md`.
 
 Dos cosas que hay que saber antes de grabar:
 
-- **`voice_change` recibe video, no audio.** Hay que grabar en video aunque la
-  imagen sea un plano fijo. Con un `.wav` suelto no se puede entrar.
+- **`voice_change` recibe video, no audio.** Hay que grabar en video. **El
+  cuadro puede ir en negro total** — la herramienta no mira la imagen, solo
+  reemplaza el audio y lo vuelve a pegar. Lo que sale también es video: hay
+  que extraerle el audio para montar.
+- **El micrófono sí importa, aunque el cuadro no.** `voice_change` cambia el
+  timbre; no arregla una toma con eco o ruido.
 - **Solo se convierte la voz de Tita.** El rol se queda con la voz de quien lo
   grabó: son personas distintas y así se distinguen sin esfuerzo.
 
@@ -103,7 +107,7 @@ convertir a uno solo.
       por el proxy de esta sesión. Es el pendiente más urgente: decir mal el
       nombre de un programa en una pieza institucional es el error que sí se
       nota.
-- [ ] **El método**, con la Prueba 1.
+- [x] **El método.** Doblaje sobre voz real, por expresividad. Confirmado 2026-09-07.
 - [ ] **Si Giselle aguanta lo institucional.** El capítulo 04 es el termómetro.
 
 ## Los programas que se nombran

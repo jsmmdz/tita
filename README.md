@@ -24,6 +24,7 @@ igual sin depender de la memoria de nadie.
 | `registro/bitacora.md` | Qué se generó, con qué parámetros y qué resultó. |
 | `guiones/` | **La serie de cortos.** Un capítulo por facultad, más el de presentación. |
 | `guiones/PRUEBA-01.md` | Cómo grabar y convertir el primer capítulo a la voz de Giselle. |
+| `entregables/tita-guiones.pdf` | **El PDF que se presenta.** Los once guiones con notas y pendientes. |
 
 ## Reglas de este repo
 
@@ -50,6 +51,10 @@ Arranque del repo: 2026-08-31.
 catálogo de voces, **la elección de la voz (Giselle)** y **los once guiones de
 la serie**.
 
+**El método es doblaje sobre voz real**, decidido el 2026-09-07 por
+expresividad: generar desde texto todavía suena robótico. Solo la pista de Tita
+se convierte.
+
 También decidido: **Tita habla en primera persona**, los diez capítulos de
 facultad **invitan a conocer la facultad y sus programas**, y el orden arranca
 con **Medicina** y sigue con **Creación y Comunicación**.
@@ -57,8 +62,8 @@ con **Medicina** y sigue con **Creación y Comunicación**.
 **Pendiente:**
 
 1. **La Prueba 1** — grabar `01-medicina` en video con voz real y ponerle
-   Giselle encima con `voice_change`. Decide si la serie se hace doblando o
-   generando desde texto. Ver `guiones/PRUEBA-01.md`.
+   Giselle encima con `voice_change`. El cuadro puede ir en negro.
+   Ver `guiones/PRUEBA-01.md`.
 2. **Verificar los nombres de los programas** contra `unbosque.edu.co`. Los
    guiones los nombran y ninguno está confirmado.
 3. **El filtro de lema** — no se ha oído a Giselle diciendo línea

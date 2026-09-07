@@ -73,9 +73,13 @@ investigación, no del gusto.
 
 ## Fase 4.5 — Probar el método
 
-**El plan cambió el 2026-09-07.** Samuel quiere grabar con voz real y ponerle
-la de Giselle encima. Eso no es text-to-speech: es `voice_change`, y es otro
-camino.
+**Decidido el 2026-09-07: la serie se hace doblando voz real.** Se graba con
+voz real y se le pone la de Giselle encima con `voice_change`. El motivo es la
+expresividad: generar desde texto todavía suena robótico, y estos guiones viven
+de las pausas y del tono.
+
+**La Ronda A queda cancelada.** Por el camino del doblaje no hay motor que
+elegir, así que no hay nada que comparar ni que gastar.
 
 **La Prueba 1 es el capítulo `01-medicina`.** Procedimiento completo en
 `guiones/PRUEBA-01.md`. En corto: se graba en video, se sube, se convierte con
@@ -84,20 +88,26 @@ Giselle, se compara contra el original.
 Dos cosas que hay que saber:
 
 - **`voice_change` recibe video, no audio.** Un `.wav` suelto no sirve de
-  entrada. Hay que grabar en video aunque la imagen sea un plano fijo.
+  entrada. **El cuadro puede ir en negro total**: la herramienta no mira la
+  imagen. Lo que devuelve también es video, así que hay que extraerle el audio.
 - **`voice_change` no tiene parámetro de modelo.** Solo `video_id`, `voice_id`
   y `voice_type`. Así que la prueba no elige motor — no hay motor que elegir.
   Lo que decide es otra cosa, más de fondo: **si la serie se hace doblando voz
   real o generando desde texto.**
 
-De ahí salen dos caminos:
+`generate_audio` queda como respaldo y solo si el doblaje falla después de
+regrabar la toma. Ahí sí habría que correr la Ronda A: Giselle en los cuatro
+motores, 2.20 créditos. **Qwen sigue descartado**, su interfaz no deja
+seleccionar la voz.
 
-- **Funciona el doblaje** → se graban los once capítulos así y **la Ronda A se
-  cancela**. No hay que gastar en comparar motores.
-- **No funciona** → se vuelve a `generate_audio` y ahí sí se corre la Ronda A:
-  Giselle en los cuatro motores, 2.20 créditos. **Qwen sigue descartado**, su
-  interfaz no deja seleccionar la voz. De los cuatro que quedan, Seed Audio es
-  el más caro y el único con perillas.
+## Fase 4.7 — Entregable
+
+`entregables/tita-guiones.pdf` — los once guiones con notas de locución, ficha
+de producción y los pendientes. Es el documento que se presenta.
+
+Se regenera con `python3 entregables/generar-pdf.py`. **El texto de los guiones
+vive dentro de ese script**, así que si cambias un guion en `guiones/`, hay que
+cambiarlo también ahí. Los archivos de `guiones/` mandan.
 
 ## Fase 5 — Registrar y proponer
 
@@ -131,7 +141,8 @@ antes de gastar en vez de decidir solo.
 - [ ] **Correr la Prueba 1** — grabar `01-medicina` en video y convertir la
       pista de Tita a Giselle. Ver `guiones/PRUEBA-01.md`. Es lo que desbloquea
       todo lo demás.
-- [ ] Correr la Ronda A **solo si la Prueba 1 falla**. La Ronda B quedó
-      cancelada: la voz ya está elegida.
+- [ ] Correr la Ronda A **solo si el doblaje falla después de regrabar**. Las
+      Rondas A y B quedan canceladas por ahora: la voz está elegida y el método
+      también.
 - [ ] Correr el filtro de lema sobre Giselle: una línea suelta del lema, para
       saber si aguanta lo institucional.

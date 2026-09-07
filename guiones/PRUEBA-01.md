@@ -1,7 +1,12 @@
 # Prueba 1 — voz original convertida a Giselle
 
 **Objetivo:** grabar el capítulo `01-medicina` con voz real y ponerle la de
-Giselle encima. De ahí sale la decisión técnica de toda la serie.
+Giselle encima.
+
+**Decidido el 2026-09-07: la serie se hace doblando voz real.** El motivo es
+la expresividad — la IA generando desde texto todavía suena robótica, y estos
+guiones viven de las pausas y del tono. La prueba ya no decide *si* doblar:
+decide si el resultado de `voice_change` sirve tal cual o hay que ajustar algo.
 
 ---
 
@@ -41,20 +46,37 @@ Son dos caminos distintos y solo uno necesita elegir motor:
 | Pausas, ironía, el "…Todavía" | Salen de la actuación | Solo con puntuación |
 | Rehacer una línea | Volver a grabar | Regenerar, gratis en tiempo |
 
-**Mi lectura:** para esta serie el doblaje se ve mejor. Los guiones dependen de
-pausas y de tono —el "…No se mueve", el "Uy. Difícil."— y eso una persona lo
-hace bien de una y un TTS no lo hace casi nunca. Pero es una lectura, no un
-dato: por eso la prueba.
+**Elegido: doblaje.** Los guiones dependen de pausas y de tono —el "…No se
+mueve", el "Uy. Difícil."— y eso una persona lo hace bien de una toma. La
+columna de la derecha queda como plan de respaldo, no como camino.
 
-Si el doblaje funciona, **la Ronda A se cancela entera** y no hay que gastar
-las 2.20 créditos en comparar motores.
+Consecuencia: **la Ronda A queda cancelada.** No hay que gastar las 2.20
+créditos comparando motores, porque por este camino no hay motor que elegir.
 
 ## Cómo grabar
 
 1. **Video, no audio.** Celular en horizontal, plano fijo, sin música.
+
+   **El cuadro puede ir en negro total.** `voice_change` solo reemplaza el
+   audio y lo vuelve a pegar sobre la imagen: le da igual qué haya en el
+   cuadro, no analiza labios ni cara. Tapa el lente, graba, y listo.
+
+   Dos advertencias que valen la pena:
+
+   - **Lo que sale es un video, no un `.wav`.** Vas a tener que extraerle el
+     audio para montar. Con `ffmpeg` es una línea:
+
+         ffmpeg -i 01-medicina-tita-giselle.mp4 -vn -c:a pcm_s16le -ar 44100 tita.wav
+
+   - **Graba el negro con buen audio igual.** Que el cuadro no importe no
+     quiere decir que el micrófono tampoco. Cuarto callado, micrófono cerca,
+     sin eco de salón. `voice_change` cambia el timbre; no arregla una toma
+     sucia — y si la entrada viene con ruido, se lo lleva puesto al resultado.
 2. **Habla natural, en español, a ritmo de conversación.** No imites una voz de
    comadreja: `voice_change` reemplaza el timbre, no la actuación. Lo que hagas
-   con las pausas y el énfasis se queda.
+   con las pausas y el énfasis se queda — **y eso es exactamente por lo que se
+   eligió este camino.** Actúa el guion de verdad; ahí está toda la diferencia
+   contra un TTS.
 3. **Las dos voces por separado.** Un video con las líneas de TITA y otro con
    las del ESTUDIANTE. Solo el de Tita se convierte.
 4. **Deja dos segundos de silencio** al principio y al final de cada video.
@@ -85,12 +107,12 @@ Compara el original contra el convertido. En este orden:
 
 ## Cómo se decide
 
-- **Aguanta los seis puntos** → la serie se hace por doblaje. Se graban los
-  otros diez y se cancela la Ronda A.
-- **Falla en dicción o en el nombre del programa** → se prueba `generate_audio`
-  con el mismo texto y ahí sí se corre la Ronda A para elegir motor.
-- **Queda "casi"** → se compara contra la versión TTS del mismo capítulo antes
-  de decidir. Es un solo audio más y evita casarse con el camino equivocado.
+- **Aguanta los seis puntos** → se graban los otros diez igual.
+- **Falla en dicción o en el nombre del programa** → primero se vuelve a grabar
+  la toma diciendo ese tramo más despacio y más separado. La entrada manda:
+  casi siempre el problema está ahí y no en la conversión.
+- **Sigue fallando después de regrabar** → recién ahí se mira `generate_audio`
+  como respaldo, sabiendo que se pierde la expresividad que motivó la decisión.
 
 ## Antes de gastar
 
