@@ -14,6 +14,7 @@ facultad: un estudiante, un docente, alguien en su práctica.
 | `voice_id` | `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
 | `voice_type` | `preset` |
 | Método | **Doblaje sobre voz real.** Decidido 2026-09-07. Ver `PRUEBA-01.md` |
+| Formato | **Tita sola.** Monólogo en los once capítulos |
 | Duración por capítulo | **máximo 30 segundos** |
 | Persona | **Primera persona.** Confirmado por Samuel, 2026-09-07 |
 | Tema de los diez de facultad | **Invitar a conocer la facultad y sus programas** |
@@ -29,36 +30,46 @@ y de ahí para abajo los demás.
 | # | Archivo | Facultad | El gancho |
 |---|---|---|---|
 | 00 | `00-presentacion.md` | — | Tita se presenta |
-| **01** | `01-medicina.md` | **Medicina** | La puerta de simulación · **capítulo de prueba** |
+| **01** | `01-medicina.md` | **Medicina** | Tres formas de cuidar a alguien · **capítulo de prueba** |
 | **02** | `02-creacion-comunicacion.md` | **Creación y Comunicación** | Siete programas en un piso |
 | 03 | `03-odontologia.md` | Odontología | Del modelo a la clínica |
 | 04 | `04-enfermeria.md` | Enfermería | Cabeza fría y manos firmes |
 | 05 | `05-psicologia.md` | Psicología | No es solo escuchar |
 | 06 | `06-ciencias.md` | Ciencias | Laboratorio, tablero y campo |
-| 07 | `07-ingenieria.md` | Ingeniería | "Todavía" |
+| 07 | `07-ingenieria.md` | Ingeniería | "…todavía" |
 | 08 | `08-juridicas-politicas.md` | Ciencias Jurídicas y Políticas | El consultorio jurídico |
 | 09 | `09-economicas-administrativas.md` | Ciencias Económicas y Administrativas | Detrás de cada cifra hay alguien |
 | 10 | `10-educacion.md` | Educación | Nadie termina de aprender a enseñar |
 
-Los diez de facultad tienen **la misma forma**: Tita pregunta por algo que ve,
-el rol responde con algo concreto y con los programas, y **Tita cierra con la
-invitación**. El remate es siempre de ella y siempre dice el nombre de la
-Facultad, para que se pueda buscar después.
+**Habla Tita y nadie más.** No hay estudiantes, ni docentes, ni segundas voces:
+los once capítulos son ella sola frente a cámara.
+
+Los diez de facultad tienen **la misma forma en cuatro tiempos**:
+
+1. **Dónde estamos** — Tita nombra lo que se ve.
+2. **Qué se estudia** — los programas, dichos sin correr.
+3. **El giro** — lo que uno no se esperaba de esa facultad.
+4. **La invitación** — "Ven a conocer la Facultad de…", siempre con el nombre
+   completo, para que se pueda buscar después.
+
+El remate es siempre de Tita y siempre cierra el capítulo. Nada después.
 
 ## Reglas de escritura de esta serie
 
 Estas reglas salen de `investigacion/lenguaje-institucional-ueb.md`. No son
 gusto: son el brief.
 
-1. **Tita pregunta, no explica.** Su atributo central es la curiosidad. El que
-   sabe del tema es el rol, no ella. Tita abre la puerta; el otro la cruza.
-2. **Nadie recita el portafolio.** Ningún personaje dice "en nuestra facultad
-   formamos profesionales integrales". Se muestra la facultad por lo que se
-   hace en ella un martes cualquiera.
-3. **Suena a estudiante, no a comercial.** A Tita la eligió la comunidad en
-   votación. Si la línea se puede leer en voz de locutor de radio, se reescribe.
-4. **Un solo remate.** Cada capítulo cierra con una frase de Tita que se pueda
-   citar sola. Nada después de esa frase.
+1. **Tita muestra, no vende.** Cuenta lo que se ve y lo que pasa ahí, no lo que
+   la facultad promete. Se muestra la facultad por lo que se hace en ella un
+   martes cualquiera.
+2. **Nadie recita el portafolio.** Tita no dice "formamos profesionales
+   integrales". Si la línea se puede leer en voz de locutor de radio, se
+   reescribe.
+3. **Cada capítulo tiene un giro.** Algo que el que mira no se esperaba de esa
+   facultad: que Ciencias sale a campo, que en Ingeniería casi nada funciona a
+   la primera. Sin giro, el capítulo es un folleto leído en voz alta.
+4. **Un solo remate.** Cada capítulo cierra con una frase que se pueda citar
+   sola. Nada después de esa frase.
 5. **Los números van escritos en letras** — "cuarenta y uno", no "41". Los TTS
    se caen ahí y no hay forma de corregirlos después.
 6. **Sin emojis ni hashtags dentro del texto hablado.** Van en el copy del

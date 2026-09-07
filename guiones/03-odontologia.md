@@ -2,11 +2,10 @@
 
 | Dato | Valor |
 |---|---|
+| Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad |
-| Rol | Estudiante en el laboratorio de simulación |
-| Voz de Tita | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Voz del rol | Voz original de quien graba (sin convertir) |
-| Duración estimada | ~25 s |
+| Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
+| Duración estimada | ~22 s |
 
 **Situación:** laboratorio de simulación. Filas de cabezas de práctica.
 
@@ -14,32 +13,26 @@
 
 ## Guion
 
-> **TITA:** ¿Y ese diente gigante?
+> **TITA:** Esto es un modelo. No un paciente.
 >
-> **ESTUDIANTE:** Es un modelo. Practicamos acá antes de la clínica.
+> Acá se practica hasta que la mano sale sola. Y después sí: pacientes de
+> verdad, acompañados, en las clínicas de la Universidad.
 >
-> **TITA:** ¿Y después?
+> Antes de lo que la gente cree.
 >
-> **ESTUDIANTE:** Después atendemos pacientes de verdad, acompañados, en las
-> clínicas de la Universidad.
->
-> **TITA:** ¿Desde cuándo?
->
-> **ESTUDIANTE:** Antes de lo que la gente cree.
->
-> **TITA:** Ven a conocer la Facultad de Odontología. Se entra a mirar y se
-> termina con las manos puestas.
+> Ven a conocer la Facultad de Odontología. Se entra a mirar y se termina con
+> las manos puestas.
 
 ## Notas de locución
 
-- **"¿Y ese diente gigante?"** — Tita señalando algo raro. Divertida, no
-  burlona.
-- **"acompañados"** — va entre comas de verdad, con pausa a lado y lado. Es la
-  palabra que dice que nadie está solo frente a un paciente, y si se pega a la
-  frase se pierde.
-- **"Antes de lo que la gente cree."** — con orgullo contenido. Sin subrayar.
-- **"Se entra a mirar y se termina con las manos puestas"** — remate. Baja al
-  final.
+- **"Esto es un modelo. No un paciente."** — dos frases cortas, con punto real
+  en el medio. Es una aclaración divertida, no una advertencia.
+- **"acompañados"** — va entre pausas de verdad a lado y lado. Es la palabra
+  que dice que nadie está solo frente a un paciente, y si se pega a la frase se
+  pierde.
+- **"Antes de lo que la gente cree."** — frase sola, con orgullo contenido. Sin
+  subrayar.
+- **"se termina con las manos puestas"** — remate. Baja al final.
 
 ## Por qué así
 

@@ -53,7 +53,8 @@ la serie**.
 
 **El método es doblaje sobre voz real**, decidido el 2026-09-07 por
 expresividad: generar desde texto todavía suena robótico. Solo la pista de Tita
-se convierte.
+se convierte — y como **habla Tita sola** en los once capítulos, es un video por
+capítulo y una sola conversión.
 
 También decidido: **Tita habla en primera persona**, los diez capítulos de
 facultad **invitan a conocer la facultad y sus programas**, y el orden arranca

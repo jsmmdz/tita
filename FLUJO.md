@@ -58,12 +58,16 @@ Eso cambia el resto del flujo:
 ## Fase 4 — Escribir los guiones (hecha, 2026-09-07)
 
 Están en `guiones/`. **Once capítulos**: uno por cada una de las diez
-facultades, más el de presentación. Cada uno es un diálogo entre Tita y el rol
-de esa facultad, de **treinta segundos como techo**.
+facultades, más el de presentación. **Habla Tita sola** — monólogo a cámara, de
+**treinta segundos como techo**.
 
-Los diez de facultad **invitan a conocer la facultad y sus programas**. Orden
+Los diez de facultad **invitan a conocer la facultad y sus programas**, en
+cuatro tiempos: dónde estamos, qué se estudia, el giro, la invitación. Orden
 fijado por Samuel: **Medicina primero, Creación y Comunicación segundo**, y de
 ahí para abajo los demás.
+
+Que hable Tita sola simplifica la producción: **un video por capítulo**, once
+tomas, once conversiones. Sin segundo actor y sin sincronizar pistas.
 
 **Tita habla en primera persona.** Confirmado el 2026-09-07; el pendiente que
 podía reescribir los once guiones queda cerrado.

@@ -77,8 +77,9 @@ créditos comparando motores, porque por este camino no hay motor que elegir.
    con las pausas y el énfasis se queda — **y eso es exactamente por lo que se
    eligió este camino.** Actúa el guion de verdad; ahí está toda la diferencia
    contra un TTS.
-3. **Las dos voces por separado.** Un video con las líneas de TITA y otro con
-   las del ESTUDIANTE. Solo el de Tita se convierte.
+3. **Un solo video.** Tita habla sola en todos los capítulos, así que no hay
+   nada que sincronizar: se graba el capítulo entero de corrido y se convierte
+   completo.
 4. **Deja dos segundos de silencio** al principio y al final de cada video.
    Sirven para montar.
 5. **Marca los puntos de riesgo**: en `01-medicina` son la enumeración
