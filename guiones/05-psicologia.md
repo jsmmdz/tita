@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~18 s |
+| Duración estimada | ~16 s |
 
 **Situación:** dos sillas frente a frente. Tita se sienta en una de ellas y
 habla a cámara.
@@ -20,7 +20,7 @@ habla a cámara.
 >
 > También es investigar, medir, y trabajar en colegios, empresas y clínicas. Y sí, atender gente: en la práctica, siempre con supervisión.
 >
-> Ven a conocerla. Si te da curiosidad la gente, ya empezaste.
+> Si te da curiosidad la gente, ya empezaste.
 
 ## Notas de locución
 

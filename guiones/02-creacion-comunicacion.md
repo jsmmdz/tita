@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad y sus siete programas |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~26 s |
+| Duración estimada | ~25 s |
 
 **Situación:** un piso donde se oyen cosas distintas a la vez. Música por un
 lado, una sierra por el otro, alguien ensayando en voz alta.
@@ -22,7 +22,7 @@ lado, una sierra por el otro, alguien ensayando en voz alta.
 >
 > Se prestan herramientas. Y se meten en los proyectos del otro.
 >
-> Ven a conocerla. Se entra por un programa y se sale con siete.
+> Se entra por un programa y se sale con siete.
 
 ## Notas de locución
 

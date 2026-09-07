@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad y sus cuatro ingenierías |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~16 s |
+| Duración estimada | ~15 s |
 
 **Situación:** taller. Sobre la mesa, algo con cables que debería moverse.
 
@@ -19,7 +19,7 @@
 >
 > Acá se hacen cosas que no existían el semestre pasado. Casi ninguna funciona a la primera… todavía.
 >
-> Ven a conocerla. Acá "todavía" es la palabra favorita.
+> Acá "todavía" es la palabra favorita.
 
 ## Notas de locución
 

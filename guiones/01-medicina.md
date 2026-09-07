@@ -7,7 +7,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad y sus programas |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~21 s |
+| Duración estimada | ~20 s |
 
 **Situación:** Tita frente a la puerta de la sala de simulación. Se asoma por
 la ventanilla y habla a cámara.
@@ -22,7 +22,7 @@ la ventanilla y habla a cámara.
 >
 > Medicina, Instrumentación Quirúrgica y Optometría. Tres formas de cuidar a alguien.
 >
-> Ven a conocerla. Trae las preguntas; las batas las ponemos nosotros.
+> Trae las preguntas; las batas las ponemos nosotros.
 
 ## Notas de locución
 
@@ -36,8 +36,6 @@ la ventanilla y habla a cámara.
   correr. Es el punto de quiebre de la prueba técnica.
 - **"Tres formas de cuidar a alguien"** — más lento, bajando. Convierte la
   lista en una idea; sin esta frase la enumeración se queda en trámite.
-- **"Ven a conocerla."** — la invitación ya no repite el nombre porque el
-  capítulo abre con él. Va corta y directa.
 - **"Trae las preguntas; las batas las ponemos nosotros"** — remate. El punto y
   coma es una pausa real, más larga que una coma. Sonrisa audible, sin subir el
   volumen.

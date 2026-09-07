@@ -7,7 +7,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~18 s |
+| Duración estimada | ~16 s |
 
 **Situación:** un salón después de clase. Material recortado sobre el
 escritorio.
@@ -22,7 +22,7 @@ escritorio.
 >
 > Porque enseñar cambia cada año, y nadie termina de aprender a enseñar.
 >
-> Ven a conocerla. Si alguna vez explicaste algo y te gustó, es acá.
+> Si alguna vez explicaste algo y te gustó, es acá.
 
 ## Notas de locución
 

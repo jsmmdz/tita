@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad y sus programas |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~21 s |
+| Duración estimada | ~20 s |
 
 **Situación:** mesón de laboratorio. Cajas de muestras rotuladas, botas de
 campo en el piso.
@@ -20,7 +20,7 @@ campo en el piso.
 >
 > Suena a laboratorio y tablero. Y lo es. Pero también es campo: salir a tomar muestras fuera de Bogotá, y los estudiantes van desde temprano.
 >
-> Ven a conocerla. Si preguntar "por qué" te dura más de dos preguntas, es acá.
+> Si preguntar "por qué" te dura más de dos preguntas, es acá.
 
 ## Notas de locución
 

@@ -51,16 +51,18 @@ Los diez de facultad tienen **la misma forma en cuatro tiempos**:
    que mira tiene que quedarse.
 2. **Qué se estudia** — los programas, dichos sin correr.
 3. **El giro** — lo que uno no se esperaba de esa facultad.
-4. **La invitación** — *"Ven a conocerla"*, más el remate citable.
+4. **El remate** — una frase que se pueda citar sola. Nada después.
 
-El remate cierra el capítulo. Nada después.
+**La facultad se nombra una sola vez, al principio.** El cierre no vuelve sobre
+ella: ni el nombre, ni un "ven a conocerla". Decirlo dos veces en veinte
+segundos suena a relleno, y en Ciencias Jurídicas y Políticas o en Económicas y
+Administrativas se comía media invitación.
 
-**Por qué el remate ya no repite el nombre.** Antes decía "Ven a conocer la
-Facultad de…" al final. Con el nombre en la primera línea, repetirlo entero
-veinte segundos después suena a relleno — y en Ciencias Jurídicas y Políticas o
-en Económicas y Administrativas se come media invitación. El nombre se dice
-**una vez, completo y de primeras**; el cierre queda libre para la frase que se
-recuerda.
+La invitación no desaparece, cambia de lugar: **está en todo el capítulo.** El
+remate no pide que vengas, deja una frase que se queda — "Cuidar es una
+carrera, y empieza acá", "Acá 'todavía' es la palabra favorita". El llamado a
+la acción explícito va en el copy del post y en el texto en pantalla, que es
+donde además se puede poner el enlace.
 
 ## Reglas de escritura de esta serie
 

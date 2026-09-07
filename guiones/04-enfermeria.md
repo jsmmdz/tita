@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~18 s |
+| Duración estimada | ~17 s |
 
 **Situación:** sala de simulación, con un maniquí en la camilla.
 
@@ -19,7 +19,7 @@
 >
 > Lo demás se aprende. Primero en simulación, después en hospitales, con pacientes de verdad. Antes de lo que crees.
 >
-> Ven a conocerla. Cuidar es una carrera, y empieza acá.
+> Cuidar es una carrera, y empieza acá.
 
 ## Notas de locución
 

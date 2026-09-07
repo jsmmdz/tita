@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~23 s |
+| Duración estimada | ~22 s |
 
 **Situación:** laboratorio de simulación. Filas de cabezas de práctica.
 
@@ -19,7 +19,7 @@
 >
 > Acá se practica hasta que la mano sale sola. Y después sí: pacientes de verdad, acompañados, en las clínicas de la Universidad. Antes de lo que la gente cree.
 >
-> Ven a conocerla. Se entra a mirar y se termina con las manos puestas.
+> Se entra a mirar y se termina con las manos puestas.
 
 ## Notas de locución
 

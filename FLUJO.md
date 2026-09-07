@@ -62,8 +62,10 @@ facultades, más el de presentación. **Habla Tita sola** — monólogo a cámar
 **treinta segundos como techo**.
 
 Los diez de facultad **invitan a conocer la facultad y sus programas**, en
-cuatro tiempos: **el nombre de la facultad**, qué se estudia, el giro y la
-invitación. Todos abren con "Esta es la Facultad de…". Orden
+cuatro tiempos: **el nombre de la facultad**, qué se estudia, el giro y el
+remate. Todos abren con "Esta es la Facultad de…", y **la facultad se nombra
+una sola vez**: el cierre no vuelve sobre ella. El llamado a la acción va en el
+copy del post, no en la voz. Orden
 fijado por Samuel: **Medicina primero, Creación y Comunicación segundo**, y de
 ahí para abajo los demás.
 

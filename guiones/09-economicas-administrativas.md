@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad y sus programas |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~22 s |
+| Duración estimada | ~21 s |
 
 **Situación:** un salón con una hoja de cálculo proyectada. Tita mira la
 pantalla demasiado de cerca y luego se voltea a cámara.
@@ -20,7 +20,7 @@ pantalla demasiado de cerca y luego se voltea a cámara.
 >
 > Suena a vivir en una hoja de cálculo. Pero no: es decidir sin tener toda la información, y se practica con casos reales. La hoja es solo la herramienta.
 >
-> Ven a conocerla. Detrás de cada cifra hay alguien.
+> Detrás de cada cifra hay alguien.
 
 ## Notas de locución
 
