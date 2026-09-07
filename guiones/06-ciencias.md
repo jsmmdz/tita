@@ -14,18 +14,17 @@ campo en el piso.
 
 ## Guion
 
-> **TITA:** Acá se estudia Biología, Matemática y Estadística.
+> **TITA:** Esta es la Facultad de Ciencias.
 >
-> Suena a laboratorio y tablero. Y lo es.
+> Acá se estudia Biología, Matemática y Estadística.
 >
-> Pero también es campo: salir a tomar muestras fuera de Bogotá. Y los
-> estudiantes van desde temprano.
+> Suena a laboratorio y tablero. Y lo es. Pero también es campo: salir a tomar muestras fuera de Bogotá, y los estudiantes van desde temprano.
 >
-> Ven a conocer la Facultad de Ciencias. Si preguntar "por qué" te dura más de
-> dos preguntas, es acá.
+> Ven a conocerla. Si preguntar "por qué" te dura más de dos preguntas, es acá.
 
 ## Notas de locución
 
+- **"Esta es la Facultad de Ciencias."** — nombre completo, con silencio después.
 - **"Biología, Matemática y Estadística"** — comas marcadas. Escúchalos:
   *Estadística* es esdrújula y algunos motores la aplanan.
 - **"Y lo es."** — tres palabras, concediendo. Es lo que hace creíble el giro

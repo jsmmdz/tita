@@ -62,7 +62,8 @@ facultades, más el de presentación. **Habla Tita sola** — monólogo a cámar
 **treinta segundos como techo**.
 
 Los diez de facultad **invitan a conocer la facultad y sus programas**, en
-cuatro tiempos: dónde estamos, qué se estudia, el giro, la invitación. Orden
+cuatro tiempos: **el nombre de la facultad**, qué se estudia, el giro y la
+invitación. Todos abren con "Esta es la Facultad de…". Orden
 fijado por Samuel: **Medicina primero, Creación y Comunicación segundo**, y de
 ahí para abajo los demás.
 
@@ -109,9 +110,14 @@ seleccionar la voz.
 `entregables/tita-guiones.pdf` — los once guiones con notas de locución, ficha
 de producción y los pendientes. Es el documento que se presenta.
 
-Se regenera con `python3 entregables/generar-pdf.py`. **El texto de los guiones
-vive dentro de ese script**, así que si cambias un guion en `guiones/`, hay que
-cambiarlo también ahí. Los archivos de `guiones/` mandan.
+Se regenera con `python3 entregables/generar-pdf.py`. **El script lee los `.md`
+de `guiones/`**: no guarda el texto, lo saca de ahí. Cambias un guion, corres el
+script, y el PDF queda al día. Los archivos de `guiones/` son la única fuente
+de verdad.
+
+Lo único que vive dentro del script es la tabla `TITULOS`: el título corto de
+cada capítulo y la lista de programas que se muestra al pie. Si agregas un
+capítulo, hay que agregarle su fila ahí.
 
 ## Fase 5 — Registrar y proponer
 

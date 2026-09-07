@@ -51,7 +51,8 @@ Acá van los valores que ya se aprobaron y no se vuelven a discutir.
 | 2026-09-07 | **La serie es de once capítulos**: diez facultades más presentación. Techo de treinta segundos cada uno. |
 | 2026-09-07 | **Los once capítulos son monólogo de Tita.** No hay segundas voces ni personajes. Un video por capítulo, una conversión. |
 | 2026-09-07 | **Tita habla en primera persona.** Cierra el pendiente que podía reescribir los once guiones. |
-| 2026-09-07 | **Los diez capítulos de facultad invitan a conocer la facultad y sus programas**, en cuatro tiempos: dónde estamos, qué se estudia, el giro, la invitación. |
+| 2026-09-07 | **Los diez capítulos de facultad invitan a conocer la facultad y sus programas**, en cuatro tiempos: el nombre, qué se estudia, el giro, la invitación. |
+| 2026-09-07 | **Todos abren presentando la facultad**: "Esta es la Facultad de…", nombre completo y silencio después. El remate ya no lo repite. |
 | 2026-09-07 | **Orden de la serie:** Medicina primero, Creación y Comunicación segundo, y de ahí para abajo los demás. |
 | 2026-09-07 | **La serie se hace doblando voz real**, no generando desde texto. Motivo: expresividad — el TTS todavía suena robótico y los guiones viven de las pausas. Solo la pista de Tita se convierte. |
 | 2026-09-07 | **Las Rondas A y B quedan canceladas.** `voice_change` no tiene parámetro de modelo, así que no hay motor que elegir. |

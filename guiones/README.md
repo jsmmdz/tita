@@ -46,13 +46,21 @@ los once capítulos son ella sola frente a cámara.
 
 Los diez de facultad tienen **la misma forma en cuatro tiempos**:
 
-1. **Dónde estamos** — Tita nombra lo que se ve.
+1. **El nombre.** *"Esta es la Facultad de…"* — **siempre arranca así**, con el
+   nombre completo y silencio después. Es lo primero que se oye y es lo que el
+   que mira tiene que quedarse.
 2. **Qué se estudia** — los programas, dichos sin correr.
 3. **El giro** — lo que uno no se esperaba de esa facultad.
-4. **La invitación** — "Ven a conocer la Facultad de…", siempre con el nombre
-   completo, para que se pueda buscar después.
+4. **La invitación** — *"Ven a conocerla"*, más el remate citable.
 
-El remate es siempre de Tita y siempre cierra el capítulo. Nada después.
+El remate cierra el capítulo. Nada después.
+
+**Por qué el remate ya no repite el nombre.** Antes decía "Ven a conocer la
+Facultad de…" al final. Con el nombre en la primera línea, repetirlo entero
+veinte segundos después suena a relleno — y en Ciencias Jurídicas y Políticas o
+en Económicas y Administrativas se come media invitación. El nombre se dice
+**una vez, completo y de primeras**; el cierre queda libre para la frase que se
+recuerda.
 
 ## Reglas de escritura de esta serie
 

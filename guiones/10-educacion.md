@@ -7,7 +7,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~19 s |
+| Duración estimada | ~18 s |
 
 **Situación:** un salón después de clase. Material recortado sobre el
 escritorio.
@@ -16,16 +16,17 @@ escritorio.
 
 ## Guion
 
-> **TITA:** Acá se forman los profesores.
+> **TITA:** Esta es la Facultad de Educación.
 >
-> Y también vuelven los que ya son profesores. Porque enseñar cambia cada año,
-> y nadie termina de aprender a enseñar.
+> Acá se forman los profesores. Y también vuelven los que ya son profesores.
 >
-> Ven a conocer la Facultad de Educación. Si alguna vez explicaste algo y te
-> gustó, es acá.
+> Porque enseñar cambia cada año, y nadie termina de aprender a enseñar.
+>
+> Ven a conocerla. Si alguna vez explicaste algo y te gustó, es acá.
 
 ## Notas de locución
 
+- **"Esta es la Facultad de Educación."** — nombre completo, con silencio después.
 - **"Y también vuelven los que ya son profesores."** — es el dato que le habla
   al que ya trabaja y está pensando en estudiar otra vez. Va con la sorpresa de
   quien acaba de enterarse.

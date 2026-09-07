@@ -7,6 +7,7 @@ from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph,
                                 Spacer, Table, TableStyle, PageBreak, KeepTogether,
                                 NextPageTemplate)
 from reportlab.lib.enums import TA_LEFT, TA_CENTER
+import re
 
 VERDE   = colors.HexColor("#14432A")
 VERDE2  = colors.HexColor("#2F6B47")
@@ -53,129 +54,81 @@ S = {
 }
 
 # ---------------------------------------------------------------- contenido
-CAPS = [
-{"n":"00","fac":"Capítulo de presentación","tit":"Hola, soy Tita",
- "esc":"Tita sola. Se presenta y abre la serie.","dur":"~26 s","pal":64,
- "dlg":[("TITA","¡Hola! Soy Tita. Comadreja, curiosa de oficio, y mascota de la Universidad El Bosque."),
-        ("TITA","A mí no me contrataron. Me eligieron ustedes, en una votación, entre tres finalistas. Gané por preguntona."),
-        ("TITA","Desde entonces me la paso metiendo la nariz donde se está aprendiendo algo: laboratorios, consultorios, aulas, ensayos."),
-        ("TITA","Si ves una cola larga doblando la esquina, soy yo."),
-        ("TITA","¿Nos vamos? El bosque es grande.")],
- "notas":["<b>«Me eligieron ustedes»</b> es la línea que carga el capítulo: va con peso, un punto más lenta. No es un dato, es la razón de ser del personaje.",
-          "La enumeración de cuatro comas se dice sin correr.",
-          "<b>«El bosque es grande»</b> cierra con silencio detrás. Nada después."],
- "prog":None},
+# ------------------------------------------------- los guiones, leidos de guiones/
+# Fuente unica de verdad: los .md de guiones/. Este script no guarda el texto.
+import os, glob as _glob
+GDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "guiones")
 
-{"n":"01","fac":"Facultad de Medicina","tit":"Tres formas de cuidar a alguien",
- "esc":"Tita frente a la puerta de la sala de simulación. Se asoma por la ventanilla y habla a cámara.","dur":"~20 s","pal":51,
- "dlg":[("TITA","Detrás de esta puerta hay una sala de simulación."),
-        ("TITA","Acá se practica antes de tocar a un paciente. Y se entra desde los primeros semestres."),
-        ("TITA","Medicina, Instrumentación Quirúrgica y Optometría. Tres formas de cuidar a alguien."),
-        ("TITA","Ven a conocer la Facultad de Medicina. Trae las preguntas; las batas las ponemos nosotros.")],
- "notas":["<b>Este es el capítulo de prueba de la serie.</b> Junta los dos riesgos: una enumeración de nombres propios y un remate con punto y coma. Si Giselle aguanta este, aguanta la serie.",
-          "«Medicina, Instrumentación Quirúrgica y Optometría» es el punto de quiebre: comas marcadas, sin correr.",
-          "<b>«Tres formas de cuidar a alguien»</b> convierte la lista en una idea. Sin esa frase, la enumeración se queda en trámite.",
-          "Si se graba en video: no aparece ningún paciente, ni de espaldas."],
- "prog":"Medicina · Instrumentación Quirúrgica · Optometría"},
+TITULOS = {
+ "00": ("Capítulo de presentación", "Hola, soy Tita", None),
+ "01": (None, "Tres formas de cuidar a alguien",
+        "Medicina · Instrumentación Quirúrgica · Optometría"),
+ "02": (None, "Siete programas en un piso",
+        "Arquitectura · Artes Plásticas · Arte Dramático · Diseño Industrial · "
+        "Diseño de Comunicación · Creación Digital · Formación Musical"),
+ "03": (None, "Del modelo a la clínica", "Odontología"),
+ "04": (None, "Cabeza fría y manos firmes", "Enfermería"),
+ "05": (None, "No es solo escuchar", "Psicología"),
+ "06": (None, "Laboratorio, tablero y campo", "Biología · Matemática · Estadística"),
+ "07": (None, "Todavía",
+        "Ingeniería Ambiental · de Sistemas · Electrónica · Industrial"),
+ "08": (None, "El consultorio jurídico", "Derecho · Ciencia Política"),
+ "09": (None, "Detrás de cada cifra hay alguien",
+        "Administración de Empresas · Negocios y Relaciones Internacionales"),
+ "10": (None, "Nadie termina de aprender a enseñar", None),
+}
 
-{"n":"02","fac":"Facultad de Creación y Comunicación","tit":"Siete programas en un piso",
- "esc":"Un piso donde se oyen cosas distintas a la vez: música, una sierra, alguien ensayando en voz alta.","dur":"~24 s","pal":60,
- "dlg":[("TITA","Acá suena de todo al mismo tiempo. Y es a propósito: son siete programas en un mismo piso."),
-        ("TITA","Arquitectura, Artes Plásticas, Arte Dramático, Diseño Industrial, Diseño de Comunicación, Creación Digital y Formación Musical."),
-        ("TITA","Se prestan herramientas. Y se meten en los proyectos del otro."),
-        ("TITA","Ven a conocer Creación y Comunicación. Se entra por un programa y se sale con siete.")],
- "notas":["<b>La lista de siete es la línea más difícil de la serie.</b> Va lenta, con coma marcada entre cada nombre y respiración antes de «Creación Digital».",
-          "Si no cabe: cuatro programas en voz y los siete en texto en pantalla. No se acelera la voz — se oye.",
-          "<b>«Y es a propósito»</b> convierte el ruido en argumento. Sin esa frase, la primera línea suena a queja."],
- "prog":"Arquitectura · Artes Plásticas · Arte Dramático · Diseño Industrial · Diseño de Comunicación · Creación Digital · Formación Musical"},
+def _md2rl(s):
+    """Negrita de markdown a la etiqueta de reportlab, y comillas tipograficas."""
+    s = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
+    s = re.sub(r"`(.+?)`", r"<b>\1</b>", s)
+    out, abierta = [], False
+    for ch in s:
+        if ch == '"':
+            out.append("»" if abierta else "«"); abierta = not abierta
+        else:
+            out.append(ch)
+    return "".join(out)
 
-{"n":"03","fac":"Facultad de Odontología","tit":"Del modelo a la clínica",
- "esc":"Laboratorio de simulación. Filas de cabezas de práctica.","dur":"~22 s","pal":54,
- "dlg":[("TITA","Esto es un modelo. No un paciente."),
-        ("TITA","Acá se practica hasta que la mano sale sola. Y después sí: pacientes de verdad, acompañados, en las clínicas de la Universidad."),
-        ("TITA","Antes de lo que la gente cree."),
-        ("TITA","Ven a conocer la Facultad de Odontología. Se entra a mirar y se termina con las manos puestas.")],
- "notas":["<b>«acompañados»</b> va entre pausas reales a lado y lado. Es la palabra que dice que nadie está solo frente a un paciente; si se pega a la frase, se pierde.",
-          "«Esto es un modelo. No un paciente.» es una aclaración divertida, no una advertencia.",
-          "«Antes de lo que la gente cree» va sola, con orgullo contenido."],
- "prog":"Odontología"},
+def _leer(path):
+    raw = open(path, encoding="utf-8").read()
+    n = re.match(r"# (\d\d) — (.+)", raw).groups()
+    num, fac = n[0], n[1]
+    dur = re.search(r"\| Duración estimada \| (~\d+ s) \|", raw).group(1)
+    esc = re.search(r"\*\*Situación:\*\* (.+?)\n\n", raw, re.S)
+    esc = " ".join(esc.group(1).split()) if esc else ""
+    if esc: esc = esc[0].upper() + esc[1:]
+    if not esc:
+        m = re.search(r"^\*\*(?:Es el capítulo cero|Abre|Cierra).*?\*\*(.*?)\n\n", raw, re.S|re.M)
+    guion = re.search(r"## Guion\n\n(.*?)\n\n## ", raw, re.S).group(1)
+    bloques, cur = [], []
+    for ln in guion.splitlines():
+        ln = ln.lstrip(">").strip()
+        ln = re.sub(r"^\*\*TITA:\*\*\s*", "", ln)
+        if not ln:
+            if cur: bloques.append(" ".join(cur)); cur = []
+        else:
+            cur.append(ln)
+    if cur: bloques.append(" ".join(cur))
+    notas_raw = re.search(r"## Notas de locución\n\n(.*?)(?:\n## |\Z)", raw, re.S).group(1)
+    notas, cur = [], []
+    for ln in notas_raw.splitlines():
+        if ln.startswith("- "):
+            if cur: notas.append(" ".join(cur))
+            cur = [ln[2:].strip()]
+        elif ln.strip() and cur:
+            cur.append(ln.strip())
+    if cur: notas.append(" ".join(cur))
+    pal = sum(len([w for w in re.split(r"\s+", b) if re.search(r"\w", w)]) for b in bloques)
+    fac0, tit, prog = TITULOS[num]
+    return {"n": num, "fac": fac0 or fac, "tit": tit, "esc": esc, "dur": dur,
+            "pal": pal, "dlg": [("TITA", _md2rl(b)) for b in bloques],
+            "notas": [_md2rl(x) for x in notas], "prog": prog}
 
-{"n":"04","fac":"Facultad de Enfermería","tit":"Cabeza fría y manos firmes",
- "esc":"Sala de simulación, con un maniquí en la camilla.","dur":"~18 s","pal":45,
- "dlg":[("TITA","¿Qué se necesita para estudiar Enfermería? Cabeza fría y manos firmes."),
-        ("TITA","Lo demás se aprende. Acá primero, en simulación. Después en hospitales, con pacientes de verdad."),
-        ("TITA","Antes de lo que crees."),
-        ("TITA","Ven a conocer la Facultad de Enfermería. Cuidar es una carrera, y empieza acá.")],
- "notas":["<b>Este capítulo es el termómetro de la voz.</b> «Cuidar es una carrera» es lo más cerca de lo institucional que llega la serie: si Giselle sonara demasiado infantil, se nota aquí primero. Grábalo temprano.",
-          "Tita se hace la pregunta a sí misma y se la responde de una. No espera.",
-          "«Lo demás se aprende» va suave y aparte. Es la que le abre la puerta a quien duda si puede."],
- "prog":"Enfermería"},
-
-{"n":"05","fac":"Facultad de Psicología","tit":"No es solo escuchar",
- "esc":"Dos sillas frente a frente. Tita se sienta en una y habla a cámara.","dur":"~16 s","pal":41,
- "dlg":[("TITA","Psicología no es solo escuchar."),
-        ("TITA","También es investigar, medir, y trabajar en colegios, empresas y clínicas."),
-        ("TITA","Y sí, atender gente. En la práctica, siempre con supervisión."),
-        ("TITA","Ven a conocer la Facultad de Psicología. Si te da curiosidad la gente, ya empezaste.")],
- "notas":["Tita desarma el prejuicio de entrada, sin pelear con nadie. Todo el capítulo cuelga de la primera frase.",
-          "<b>«siempre con supervisión» no se recorta nunca</b>, aunque falte tiempo. Es la parte responsable de la respuesta.",
-          "«colegios, empresas y clínicas» abre el campo laboral sin decir «campo laboral»."],
- "prog":"Psicología"},
-
-{"n":"06","fac":"Facultad de Ciencias","tit":"Laboratorio, tablero y campo",
- "esc":"Mesón de laboratorio. Cajas de muestras rotuladas, botas de campo en el piso.","dur":"~20 s","pal":51,
- "dlg":[("TITA","Acá se estudia Biología, Matemática y Estadística."),
-        ("TITA","Suena a laboratorio y tablero. Y lo es."),
-        ("TITA","Pero también es campo: salir a tomar muestras fuera de Bogotá. Y los estudiantes van desde temprano."),
-        ("TITA","Ven a conocer la Facultad de Ciencias. Si preguntar «por qué» te dura más de dos preguntas, es acá.")],
- "notas":["<b>«Y lo es»</b> es lo que hace creíble el giro: Tita no niega el prejuicio, lo completa.",
-          "«Pero también es campo» sube. Es el giro del capítulo y desarma la idea de que ciencias es estar encerrada.",
-          "«Estadística» es esdrújula y algunos motores la aplanan: escúchala."],
- "prog":"Biología · Matemática · Estadística"},
-
-{"n":"07","fac":"Facultad de Ingeniería","tit":"Todavía",
- "esc":"Taller. Sobre la mesa, algo con cables que debería moverse.","dur":"~15 s","pal":38,
- "dlg":[("TITA","Cuatro ingenierías: Ambiental, de Sistemas, Electrónica e Industrial."),
-        ("TITA","Acá se hacen cosas que no existían el semestre pasado."),
-        ("TITA","Casi ninguna funciona a la primera… todavía."),
-        ("TITA","Ven a conocer la Facultad de Ingeniería. Acá «todavía» es la palabra favorita.")],
- "notas":["<b>Todo el capítulo cuelga de cómo suene «…todavía».</b> La pausa antes es real y la palabra va tranquila, casi contenta. Si suena a excusa, se cae. Si suena a promesa, funciona.",
-          "La enumeración va rápida y segura, como quien se la sabe de memoria."],
- "prog":"Ingeniería Ambiental · de Sistemas · Electrónica · Industrial"},
-
-{"n":"08","fac":"Facultad de Ciencias Jurídicas y Políticas","tit":"El consultorio jurídico",
- "esc":"Entrada del consultorio jurídico. Sillas de espera.","dur":"~20 s","pal":50,
- "dlg":[("TITA","Acá se estudia Derecho y Ciencia Política."),
-        ("TITA","Y acá hay un consultorio jurídico donde los estudiantes atienden gratis a quien no puede pagar un abogado."),
-        ("TITA","Casos de verdad. Personas de verdad."),
-        ("TITA","Ven a conocer la Facultad de Ciencias Jurídicas y Políticas. Acá la ley no solo se estudia: se ejerce.")],
- "notas":["El nombre completo de la Facultad es largo: <b>dilo entero y sin correr.</b> Es lo que la gente tiene que poder buscar después.",
-          "«Casos de verdad. Personas de verdad.» — punto real en el medio, el peso en la segunda mitad.",
-          "Si se graba en video: la sala de espera va vacía o con figurantes. No se filma a consultantes reales."],
- "prog":"Derecho · Ciencia Política"},
-
-{"n":"09","fac":"Facultad de Ciencias Económicas y Administrativas","tit":"Detrás de cada cifra hay alguien",
- "esc":"Un salón con una hoja de cálculo proyectada. Tita mira la pantalla demasiado de cerca y se voltea a cámara.","dur":"~20 s","pal":50,
- "dlg":[("TITA","Administración de Empresas, y Negocios y Relaciones Internacionales."),
-        ("TITA","Suena a vivir en una hoja de cálculo. Pero no."),
-        ("TITA","Es decidir sin tener toda la información. Y se practica con casos reales. La hoja es solo la herramienta."),
-        ("TITA","Ven a conocer Ciencias Económicas y Administrativas. Detrás de cada cifra hay alguien.")],
- "notas":["<b>Cuidado con la línea de los programas:</b> tiene dos «y» seguidas y se entiende mal si no se marca la coma. La pausa va antes del primer «y», no después.",
-          "«Pero no.» necesita el silencio después. Es el giro.",
-          "El remate va sin solemnidad, como quien dice una regla práctica."],
- "prog":"Administración de Empresas · Negocios y Relaciones Internacionales"},
-
-{"n":"10","fac":"Facultad de Educación","tit":"Nadie termina de aprender a enseñar",
- "esc":"Un salón después de clase. Material recortado sobre el escritorio. Cierra la serie.","dur":"~17 s","pal":42,
- "dlg":[("TITA","Acá se forman los profesores."),
-        ("TITA","Y también vuelven los que ya son profesores. Porque enseñar cambia cada año, y nadie termina de aprender a enseñar."),
-        ("TITA","Ven a conocer la Facultad de Educación. Si alguna vez explicaste algo y te gustó, es acá.")],
- "notas":["<b>Cierra la serie entera.</b> La invitación deja de ser sobre una facultad y pasa a ser sobre quien está mirando.",
-          "«Y también vuelven los que ya son profesores» es el dato que le habla al que ya trabaja y piensa en volver.",
-          "«nadie termina de aprender a enseñar» va lenta y sin subrayar. Si se dice como frase de cartel, se cae.",
-          "Único capítulo que no nombra programas: no se pudo verificar la oferta."],
- "prog":None},
-]
+CAPS = [_leer(f) for f in sorted(_glob.glob(os.path.join(GDIR, "[0-9][0-9]-*.md")))]
+assert len(CAPS) == 11, "esperaba once guiones, encontre %d" % len(CAPS)
+for _c in CAPS:
+    assert _c["dlg"], "guion vacio en %s" % _c["n"]
 
 # ---------------------------------------------------------------- páginas
 def portada(c, doc):

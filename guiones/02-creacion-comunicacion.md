@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad y sus siete programas |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~25 s |
+| Duración estimada | ~26 s |
 
 **Situación:** un piso donde se oyen cosas distintas a la vez. Música por un
 lado, una sierra por el otro, alguien ensayando en voz alta.
@@ -14,16 +14,15 @@ lado, una sierra por el otro, alguien ensayando en voz alta.
 
 ## Guion
 
-> **TITA:** Acá suena de todo al mismo tiempo. Y es a propósito: son siete
-> programas en un mismo piso.
+> **TITA:** Esta es la Facultad de Creación y Comunicación.
 >
-> Arquitectura, Artes Plásticas, Arte Dramático, Diseño Industrial, Diseño de
-> Comunicación, Creación Digital y Formación Musical.
+> Acá suena de todo al mismo tiempo. Y es a propósito: son siete programas en un mismo piso.
+>
+> Arquitectura, Artes Plásticas, Arte Dramático, Diseño Industrial, Diseño de Comunicación, Creación Digital y Formación Musical.
 >
 > Se prestan herramientas. Y se meten en los proyectos del otro.
 >
-> Ven a conocer Creación y Comunicación. Se entra por un programa y se sale con
-> siete.
+> Ven a conocerla. Se entra por un programa y se sale con siete.
 
 ## Notas de locución
 
@@ -32,6 +31,9 @@ lado, una sierra por el otro, alguien ensayando en voz alta.
   de "Creación Digital".
 - Si no cabe en treinta segundos: se dicen cuatro programas en voz y los siete
   van en texto en pantalla. **No se acelera la voz** — se oye.
+- **"Esta es la Facultad de Creación y Comunicación."** — nombre completo,
+  tranquilo, con silencio después. Es el nombre más largo de la serie después
+  del de Jurídicas: no se corre.
 - **"Y es a propósito"** — es lo que convierte el ruido en argumento. Sin esa
   frase, la primera línea suena a queja.
 - **"Se prestan herramientas."** — dicho como se dice algo obvio, sin énfasis.

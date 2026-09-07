@@ -14,19 +14,20 @@ habla a cámara.
 
 ## Guion
 
-> **TITA:** Psicología no es solo escuchar.
+> **TITA:** Esta es la Facultad de Psicología.
 >
-> También es investigar, medir, y trabajar en colegios, empresas y clínicas.
+> Y no, no es solo escuchar.
 >
-> Y sí, atender gente. En la práctica, siempre con supervisión.
+> También es investigar, medir, y trabajar en colegios, empresas y clínicas. Y sí, atender gente: en la práctica, siempre con supervisión.
 >
-> Ven a conocer la Facultad de Psicología. Si te da curiosidad la gente, ya
-> empezaste.
+> Ven a conocerla. Si te da curiosidad la gente, ya empezaste.
 
 ## Notas de locución
 
-- **"Psicología no es solo escuchar."** — Tita desarma el prejuicio de entrada,
-  sin pelear con nadie. Tranquila. Todo el capítulo cuelga de esa frase.
+- **"Esta es la Facultad de Psicología."** — nombre completo, con silencio
+  después.
+- **"Y no, no es solo escuchar."** — Tita desarma el prejuicio de una, sin
+  pelear con nadie. Tranquila. Todo el capítulo cuelga de esa frase.
 - **"colegios, empresas y clínicas"** — tres comas marcadas. Abre el campo
   laboral sin decir "campo laboral".
 - **"siempre con supervisión"** — **no se recorta nunca**, aunque falte tiempo.

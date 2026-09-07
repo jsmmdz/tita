@@ -5,7 +5,7 @@
 | Formato | **Tita sola.** Monólogo |
 | Tema | Invitación a conocer la Facultad y sus programas |
 | Voz | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Duración estimada | ~21 s |
+| Duración estimada | ~22 s |
 
 **Situación:** un salón con una hoja de cálculo proyectada. Tita mira la
 pantalla demasiado de cerca y luego se voltea a cámara.
@@ -14,18 +14,18 @@ pantalla demasiado de cerca y luego se voltea a cámara.
 
 ## Guion
 
-> **TITA:** Administración de Empresas, y Negocios y Relaciones Internacionales.
+> **TITA:** Esta es la Facultad de Ciencias Económicas y Administrativas.
 >
-> Suena a vivir en una hoja de cálculo. Pero no.
+> Administración de Empresas, y Negocios y Relaciones Internacionales.
 >
-> Es decidir sin tener toda la información. Y se practica con casos reales. La
-> hoja es solo la herramienta.
+> Suena a vivir en una hoja de cálculo. Pero no: es decidir sin tener toda la información, y se practica con casos reales. La hoja es solo la herramienta.
 >
-> Ven a conocer Ciencias Económicas y Administrativas. Detrás de cada cifra hay
-> alguien.
+> Ven a conocerla. Detrás de cada cifra hay alguien.
 
 ## Notas de locución
 
+- **"Esta es la Facultad de Ciencias Económicas y Administrativas."** — nombre
+  completo y sin correr, con silencio después.
 - **"Administración de Empresas, y Negocios y Relaciones Internacionales"** —
   **cuidado con esta línea.** Tiene dos "y" seguidas y se entiende mal si no se
   marca la coma. La pausa va **antes** del primer *y*, no después.
