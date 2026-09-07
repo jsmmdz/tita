@@ -61,24 +61,43 @@ Están en `guiones/`. **Once capítulos**: uno por cada una de las diez
 facultades, más el de presentación. Cada uno es un diálogo entre Tita y el rol
 de esa facultad, de **treinta segundos como techo**.
 
-Las reglas de escritura de la serie están en `guiones/README.md` y salen de la
+Los diez de facultad **invitan a conocer la facultad y sus programas**. Orden
+fijado por Samuel: **Medicina primero, Creación y Comunicación segundo**, y de
+ahí para abajo los demás.
+
+**Tita habla en primera persona.** Confirmado el 2026-09-07; el pendiente que
+podía reescribir los once guiones queda cerrado.
+
+Las reglas de escritura están en `guiones/README.md` y salen de la
 investigación, no del gusto.
 
-## Fase 4.5 — Probar el motor
+## Fase 4.5 — Probar el método
 
-**Samuel lanza a mano en la interfaz de Higgsfield.** El detalle está en
-`investigacion/modelos-y-flujo.md`.
+**El plan cambió el 2026-09-07.** Samuel quiere grabar con voz real y ponerle
+la de Giselle encima. Eso no es text-to-speech: es `voice_change`, y es otro
+camino.
 
-Queda **solo la Ronda A**: Giselle, el mismo texto, los cuatro motores.
-**2.20 créditos, cuatro generaciones.** Decide cuál motor habla español sin
-acento prestado.
+**La Prueba 1 es el capítulo `01-medicina`.** Procedimiento completo en
+`guiones/PRUEBA-01.md`. En corto: se graba en video, se sube, se convierte con
+Giselle, se compara contra el original.
 
-**Qwen quedó descartado: su interfaz no deja seleccionar la voz.** Quedan
-cuatro motores, de 0.30 a 1.0 crédito por línea. El default, Seed Audio, es el
-más caro — y el único con perillas, que es lo que importa si Giselle sale un
-poco rápida o un poco aguda.
+Dos cosas que hay que saber:
 
-Con el motor decidido se graban los once capítulos de `guiones/`.
+- **`voice_change` recibe video, no audio.** Un `.wav` suelto no sirve de
+  entrada. Hay que grabar en video aunque la imagen sea un plano fijo.
+- **`voice_change` no tiene parámetro de modelo.** Solo `video_id`, `voice_id`
+  y `voice_type`. Así que la prueba no elige motor — no hay motor que elegir.
+  Lo que decide es otra cosa, más de fondo: **si la serie se hace doblando voz
+  real o generando desde texto.**
+
+De ahí salen dos caminos:
+
+- **Funciona el doblaje** → se graban los once capítulos así y **la Ronda A se
+  cancela**. No hay que gastar en comparar motores.
+- **No funciona** → se vuelve a `generate_audio` y ahí sí se corre la Ronda A:
+  Giselle en los cuatro motores, 2.20 créditos. **Qwen sigue descartado**, su
+  interfaz no deja seleccionar la voz. De los cuatro que quedan, Seed Audio es
+  el más caro y el único con perillas.
 
 ## Fase 5 — Registrar y proponer
 
@@ -99,17 +118,20 @@ antes de gastar en vez de decidir solo.
 
 ## Pendientes
 
+- [ ] **Verificar los nombres de los programas** que se nombran en los guiones,
+      contra `unbosque.edu.co`. Salieron de resultados de búsqueda. Es el
+      pendiente más urgente: un nombre de programa mal dicho en pieza
+      institucional sí se nota.
 - [ ] Confirmar las citas de la investigación contra `unbosque.edu.co` — el
       dominio está bloqueado por el proxy de red de esta sesión.
 - [ ] ¿Hay manual de marca de la UEB con tono de voz? Si existe, manda.
-- [ ] ¿Tita habla en primera persona o alguien narra sobre ella? Lo oficial la
-      narra en tercera. **Esto reescribe el texto de prueba entero.**
 - [ ] ¿Para qué piezas es la voz — reels, video institucional, señalética?
 - [ ] Revisar el Instagram de la UEB para el registro informal. No pude:
       el proxy bloquea el dominio.
-- [ ] Correr la Ronda A **con Giselle**. La lanza Samuel a mano. La Ronda B
-      quedó cancelada: la voz ya está elegida.
-- [ ] Audicionar las voces de los roles que dialogan con Tita en `guiones/`.
-      Las propuestas de cada capítulo son propuestas, no decisiones.
+- [ ] **Correr la Prueba 1** — grabar `01-medicina` en video y convertir la
+      pista de Tita a Giselle. Ver `guiones/PRUEBA-01.md`. Es lo que desbloquea
+      todo lo demás.
+- [ ] Correr la Ronda A **solo si la Prueba 1 falla**. La Ronda B quedó
+      cancelada: la voz ya está elegida.
 - [ ] Correr el filtro de lema sobre Giselle: una línea suelta del lema, para
       saber si aguanta lo institucional.

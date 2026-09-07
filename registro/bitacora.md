@@ -9,16 +9,10 @@ No se creó ninguna voz: todas son presets del catálogo.
 | Personaje | Voz | voice_id | Estado |
 |---|---|---|---|
 | **Tita** | Giselle | `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` | **Elegida** 2026-09-07 |
-| Rol — Medicina | Juan | `6b528d43-c056-4a2f-9d82-1591a7ba13b0` | Propuesta, sin audicionar |
-| Rol — Odontología | Kaia | `bb9db352-f345-59f3-90b3-fa9432bcff91` | Propuesta, sin audicionar |
-| Rol — Enfermería | Helena | `3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd` | Propuesta, sin audicionar |
-| Rol — Psicología | Julian | `95429266-c0ac-4137-a209-63b8812b0f23` | Propuesta, sin audicionar |
-| Rol — Ciencias | Zoe | `d0374db1-44b9-4f05-939e-0a9ae9dbbe6a` | Propuesta, sin audicionar |
-| Rol — Ingeniería | Marcus | `6f98d3dd-324f-4845-8c28-c1d1647a06cd` | Propuesta, sin audicionar |
-| Rol — Jurídicas | Luna | `375a3398-e3b4-4f91-845d-42181e352899` | Propuesta, sin audicionar |
-| Rol — Económicas | Andre | `f1e8226e-2248-4d5f-b43c-0a79e9949dbf` | Propuesta, sin audicionar |
-| Rol — Creación | Chloe | `e9cfbbf0-4476-46be-b396-596eb774b165` | Propuesta, sin audicionar |
-| Rol — Educación | Miles | `e18664a7-ee4f-5273-acf8-533eb24cd366` | Propuesta, sin audicionar |
+| Los roles | Voz original de quien graba | — | No se convierte |
+
+Los roles ya no usan preset: se quedan con la voz de la persona que los graba.
+Solo la pista de Tita pasa por `voice_change`.
 
 ## Generaciones
 
@@ -55,11 +49,17 @@ Acá van los valores que ya se aprobaron y no se vuelven a discutir.
 | 2026-08-31 | **Qwen queda fuera**: su interfaz no deja seleccionar la voz. |
 | 2026-09-07 | **La voz de Tita es Giselle** (`9d3128b8-dd25-5158-9bdb-2e69ac8998b9`). Sin Ronda B, a oído. No se vuelve a discutir. |
 | 2026-09-07 | **La serie es de once capítulos**: diez facultades más presentación. Techo de treinta segundos cada uno. |
-| 2026-09-07 | **Los diálogos se generan por pista separada y se editan.** Nada de multi-hablante hasta que haya motor decidido. |
+| 2026-09-07 | **Los diálogos se graban por pista separada y se editan.** Un video por personaje; nunca los dos en la misma toma. |
+| 2026-09-07 | **Tita habla en primera persona.** Cierra el pendiente que podía reescribir los once guiones. |
+| 2026-09-07 | **Los diez capítulos de facultad invitan a conocer la facultad y sus programas.** |
+| 2026-09-07 | **Orden de la serie:** Medicina primero, Creación y Comunicación segundo, y de ahí para abajo los demás. |
+| 2026-09-07 | **La primera prueba es doblaje, no TTS:** se graba con voz real y se convierte la pista de Tita con `voice_change`. Solo la de Tita. |
 
 ### Todavía sin decidir
 
-- **El motor.** Falta la Ronda A. Sin esto no se graba nada.
-- **La persona.** Primera o tercera. Reescribe los once guiones si cambia.
-- **Las voces de los roles.** Las de arriba son propuestas.
+- **El método.** Doblaje con `voice_change` o texto a voz con `generate_audio`.
+  Lo resuelve la Prueba 1 sobre `01-medicina`. Ver `guiones/PRUEBA-01.md`.
+- **El motor**, y solo si la Prueba 1 falla. `voice_change` no tiene parámetro
+  de modelo, así que por el camino del doblaje no hay motor que elegir.
+- **Los nombres de los programas.** Ninguno verificado contra la página oficial.
 - **Si Giselle aguanta el lema.** Filtro sin correr.

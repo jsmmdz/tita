@@ -1,47 +1,61 @@
 # 01 — Facultad de Medicina
 
+**Abre la serie de facultades.** Va después del capítulo de presentación.
+
 | Dato | Valor |
 |---|---|
-| Rol | Estudiante en su primera rotación |
+| Tema | Invitación a conocer la Facultad y sus programas |
+| Rol | Estudiante de Medicina |
 | Voz de Tita | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Voz del rol | Propuesta: **Juan** — `6b528d43-c056-4a2f-9d82-1591a7ba13b0` · sin audicionar |
-| Duración estimada | ~28 s |
+| Voz del rol | Voz original de quien graba (sin convertir) |
+| Duración estimada | ~27 s |
 
-**Situación:** pasillo de hospital, muy temprano. El estudiante lleva la bata
-puesta y no se decide a entrar.
+**Situación:** pasillo. Una puerta cerrada con ventanilla. Tita se asoma.
 
 ---
 
 ## Guion
 
-> **TITA:** Séptimo piso, seis y media de la mañana. ¿Y esa cara?
+> **TITA:** ¿Qué hay detrás de esa puerta?
 >
-> **ESTUDIANTE:** Primera rotación. Siento que no me sé nada.
+> **ESTUDIANTE:** Simulación. Ahí practicamos antes de tocar a un paciente.
 >
-> **TITA:** Te sabes lo que estudiaste. Lo que falta se aprende con las manos.
+> **TITA:** ¿Y se puede entrar?
 >
-> **ESTUDIANTE:** ¿Y si me tiembla la voz?
+> **ESTUDIANTE:** Si estudias acá, entras desde los primeros semestres.
 >
-> **TITA:** Que tiemble. Igual salúdalo por su nombre. Ahí empieza todo lo demás.
+> **TITA:** ¿Y solo se estudia Medicina?
 >
-> **ESTUDIANTE:** …Listo. Voy.
+> **ESTUDIANTE:** Medicina, Instrumentación Quirúrgica y Optometría.
 >
-> **TITA:** Ve. Yo miro desde la ventana.
+> **TITA:** Ven a conocer la Facultad de Medicina. Trae las preguntas; las
+> batas las ponemos nosotros.
 
 ## Notas de locución
 
-- El estudiante habla **bajo y rápido** en las dos primeras réplicas. Tita
-  habla despacio. El contraste de ritmo es el chiste y es el cariño.
-- **"Que tiemble."** — dos palabras, punto. Sin dulzura de más: Tita no lo está
-  consolando, lo está autorizando.
-- **"…Listo. Voy."** — los puntos suspensivos son medio segundo real de aire.
-  Si el motor se los come, se separa la línea en dos generaciones y se pega la
-  pausa en el editor.
-- **"Yo miro desde la ventana"** — Tita no entra a la consulta. Es un detalle
-  de respeto que conviene sostener en toda la serie: al paciente no se le
-  convierte en escenografía.
+- **"¿Qué hay detrás de esa puerta?"** — curiosidad de verdad, no de guía
+  turística. Es la primera línea de Giselle en toda la serie de facultades: si
+  suena a comercial, se repite.
+- **"Medicina, Instrumentación Quirúrgica y Optometría"** — enumeración con las
+  comas marcadas. **Es la línea que hay que escuchar con lupa:** son tres
+  nombres propios largos seguidos y es donde el motor se va a trabar.
+- **"Trae las preguntas; las batas las ponemos nosotros"** — remate. El
+  punto y coma es una pausa real, más larga que una coma. Va con sonrisa
+  audible y sin subir el volumen.
+- El remate es de Tita, siempre. En toda la serie la invitación la hace ella.
+
+## Por qué este es el capítulo de prueba
+
+Tiene las tres cosas que hay que verificar antes de grabar los otros diez:
+
+1. **Una enumeración de nombres propios** — el riesgo de pronunciación.
+2. **Un remate con puntuación compleja** — el punto y coma.
+3. **Alternancia rápida de dos voces** — cinco cambios de turno en 27 s.
+
+Si Giselle aguanta este, aguanta la serie. El procedimiento está en
+`PRUEBA-01.md`.
 
 ## Cuidado
 
-Nada de bata, estetoscopio ni consultorio real sin permiso. Si el corte se
-graba en video, **no aparece ningún paciente**, ni de espaldas.
+Si se graba en video: **no aparece ningún paciente**, ni de espaldas. La sala
+de simulación sí se puede mostrar; una consulta real no.

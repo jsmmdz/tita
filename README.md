@@ -23,6 +23,7 @@ igual sin depender de la memoria de nadie.
 | `referencias/README.md` | Cómo se registran los audios de referencia (por ruta, no por archivo). |
 | `registro/bitacora.md` | Qué se generó, con qué parámetros y qué resultó. |
 | `guiones/` | **La serie de cortos.** Un capítulo por facultad, más el de presentación. |
+| `guiones/PRUEBA-01.md` | Cómo grabar y convertir el primer capítulo a la voz de Giselle. |
 
 ## Reglas de este repo
 
@@ -49,12 +50,16 @@ Arranque del repo: 2026-08-31.
 catálogo de voces, **la elección de la voz (Giselle)** y **los once guiones de
 la serie**.
 
-**Pendiente antes de generar audio:**
+También decidido: **Tita habla en primera persona**, los diez capítulos de
+facultad **invitan a conocer la facultad y sus programas**, y el orden arranca
+con **Medicina** y sigue con **Creación y Comunicación**.
 
-1. **La Ronda A** — Giselle en los cuatro motores, para decidir cuál habla
-   español decente. La lanza Samuel a mano. Ver `investigacion/modelos-y-flujo.md`.
-2. **Confirmar la persona** — todo está escrito con Tita en primera persona y
-   lo oficial de la UEB la narra en tercera. Si va en tercera, se reescriben
-   los once guiones.
-3. **Las voces de los roles** — cada capítulo propone una, ninguna está
-   audicionada.
+**Pendiente:**
+
+1. **La Prueba 1** — grabar `01-medicina` en video con voz real y ponerle
+   Giselle encima con `voice_change`. Decide si la serie se hace doblando o
+   generando desde texto. Ver `guiones/PRUEBA-01.md`.
+2. **Verificar los nombres de los programas** contra `unbosque.edu.co`. Los
+   guiones los nombran y ninguno está confirmado.
+3. **El filtro de lema** — no se ha oído a Giselle diciendo línea
+   institucional.

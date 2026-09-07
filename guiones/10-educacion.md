@@ -1,48 +1,57 @@
 # 10 — Facultad de Educación
 
+**Cierra la serie.**
+
 | Dato | Valor |
 |---|---|
-| Rol | Docente en formación, la noche antes de su primera clase |
+| Tema | Invitación a conocer la Facultad |
+| Rol | Docente en formación |
 | Voz de Tita | **Giselle** — `9d3128b8-dd25-5158-9bdb-2e69ac8998b9` |
-| Voz del rol | Propuesta: **Miles** — `e18664a7-ee4f-5273-acf8-533eb24cd366` · sin audicionar |
-| Duración estimada | ~27 s |
+| Voz del rol | Voz original de quien graba (sin convertir) |
+| Duración estimada | ~26 s |
 
-**Situación:** un escritorio, material recortado, todo listo desde hace horas.
+**Situación:** un salón después de clase. Material recortado sobre el
+escritorio.
 
 ---
 
 ## Guion
 
-> **TITA:** ¿Nervios?
+> **TITA:** ¿Acá se forman los profesores?
 >
-> **DOCENTE:** Mañana doy mi primera clase.
+> **DOCENTE:** Y los que ya son profesores y vuelven a estudiar.
 >
-> **TITA:** ¿De qué?
+> **TITA:** ¿Se puede volver?
 >
-> **DOCENTE:** De todo, creo. Son de segundo de primaria.
+> **DOCENTE:** Enseñar cambia cada año. Nadie termina de aprender a enseñar.
 >
-> **TITA:** Entonces no llegues a explicar. Llega a preguntar. Ellos ya vienen
-> con las preguntas puestas.
+> **TITA:** …Esa me gustó.
 >
-> **DOCENTE:** ¿Y si no sé la respuesta?
+> **DOCENTE:** Ven y mira los programas.
 >
-> **TITA:** Dices "averigüémoslo". Es la mejor frase que tiene un profesor.
+> **TITA:** Ven a conocer la Facultad de Educación. Si alguna vez explicaste
+> algo y te gustó, es acá.
 
 ## Notas de locución
 
-- **"¿Nervios?"** — una palabra, entrando en frío. Abre el capítulo sin
-  presentación.
-- **"De todo, creo."** — el "creo" es lo que hace simpático al personaje. No se
-  corta aunque haya que ganar segundos.
-- **"averigüémoslo"** — **palabra de riesgo.** Esdrújula, con diéresis y cinco
-  sílabas. Escúchala aislada antes de dar el corte por bueno. Si el motor la
-  destroza, la alternativa es *"lo averiguamos juntos"*, que dice lo mismo y es
-  más fácil de pronunciar.
-- **"Es la mejor frase que tiene un profesor."** — remate. Va tranquilo, sin
-  subrayar.
+- **"¿Se puede volver?"** — pregunta genuina. Tita no sabía que se podía, y esa
+  sorpresa es la que le habla al profesor que está pensando en estudiar otra
+  vez.
+- **"Nadie termina de aprender a enseñar."** — la línea del capítulo. Lenta,
+  sin subrayarla. Si el rol la dice como frase de cartel, se cae.
+- **"…Esa me gustó."** — Tita reconociendo que aprendió algo. Bajito, con la
+  pausa antes.
+- **"Si alguna vez explicaste algo y te gustó, es acá."** — remate de la serie
+  entera. Directo a quien está viendo. Silencio después.
+
+## Nota de contenido
+
+**Es el único capítulo que no nombra programas**, porque no se pudieron
+verificar. Si confirmas la oferta de la Facultad, la réplica "Ven y mira los
+programas" es el lugar exacto donde entran los nombres.
 
 ## Por qué cierra la serie
 
-Es el capítulo donde **Tita da el consejo en vez de recibirlo**, y el consejo
-es exactamente su propio método: preguntar. Cierra el arco que abrió el
-capítulo cero con "gané por preguntona".
+Es el capítulo donde **Tita da el paso de curiosa a convencida**, y donde la
+invitación deja de ser sobre una facultad y pasa a ser sobre el que está
+mirando. Cierra el arco que abrió el capítulo cero con "gané por preguntona".
