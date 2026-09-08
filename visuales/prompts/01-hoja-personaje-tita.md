@@ -67,14 +67,20 @@ El prompt no arregla una referencia mala. Los renders tienen que salir así:
 > Es la única parte del personaje donde **manda el modelo 3D y no el traje**,
 > por la razón simple de que es la única fuente que hay.
 >
-> ⚠️ **El color de la cola es una inferencia, no un dato.** Ninguna foto la
-> muestra, así que se le asigna el verde bosque del dorso por continuidad. Si
-> el traje real tuviera una cola de otro color —punta crema, por ejemplo—, esto
-> hay que corregirlo antes de cerrar `@tita`.
+> **Corregido el 2026-09-08 con foto del traje.** La primera versión decía
+> "larga como el cuerpo, extendida hacia atrás y levantada", sacado del modelo
+> 3D. **Es al revés:** la cola real es **corta, ancha y baja** — una paleta
+> redondeada que cuelga hacia abajo y casi roza el piso. Verde bosque como el
+> resto. La generación de Nano Banana Pro del 2026-09-08 se corrió con la
+> descripción vieja y **queda invalidada por la fuente**, no por el motor.
 >
-> El panel de tres cuartos es el que la muestra mejor. Y como la cola cambia la
-> silueta, **la pose en que quede es la que Tita tiene en los once capítulos**:
-> el elemento la fija.
+> ⚠️ **La marca blanca de la cola está sin identificar.** La cola lleva encima
+> unos trazos blancos en zigzag, claros y deliberados. No se sabe si son letras
+> estilizadas, un motivo gráfico institucional o marcas de pelaje del diseño.
+> **No se inventa:** hasta que Samuel confirme qué son, el prompt las describe
+> como marca abstracta. Si resultan ser letras, hay que escribir el texto
+> exacto — un logo mal dibujado en pieza institucional es el equivalente visual
+> de decir mal el nombre de un programa.
 
 ---
 
@@ -88,7 +94,7 @@ Three-panel character reference sheet on one seamless canvas, based on the 3D ch
 
 Coloring, taken from the attached costume photographs and treated as canon: deep forest green fur covering the back, flanks, outer ears, arms, legs and the top of the head, the green wrapping around the eyes as a mask that narrows toward the muzzle — a rich saturated dark green that reads almost black in shade and clearly green in sunlight. A broad warm cream panel runs from under the chin down the chest and across the belly in one continuous rounded shape. The muzzle and cheeks are the same warm cream, wide and softly rounded. The nose is large, rounded and pale salmon pink. Inner ears pale salmon pink. Hands and feet pale salmon pink with four soft digits each. Eyes very large and round with a white sclera, a bright emerald-green iris, a dark pupil and a single white catchlight. Above each eye, three short curved cream brow strokes. Long dark brown whiskers, three to a side.
 
-Fur is rendered as soft short plush with visible large-scale grooming direction, never as fine individual strands. Eyes are large, round and glossy with a clear iris, a dark pupil and a single soft catchlight — identical size, color and spacing in every panel. Small rounded ears, short muzzle with a small dark nose, two small pointed fangs just visible at the upper lip, thin light whiskers. Warm, alert, friendly expression, mouth closed in a small natural smile. Body proportions from the attached photographs: a very large rounded head, roughly a third of her total height, sitting on a soft pear-shaped body with a wide low belly and short stubby legs. Standing upright on her hind legs, bipedal, arms relaxed down at her sides — NOT a T-pose, NOT arms outstretched, NOT arms raised. She has a long thick tail, taken from the attached 3D render: roughly as long as her body, thick at the base and tapering smoothly toward a rounded tip, covered in the same deep forest green fur as her back, held extended backward and slightly raised, clear of the ground. The tail is fully visible in the three-quarter panel and reads clearly behind her silhouette in the front panel.
+Fur is rendered as soft short plush with visible large-scale grooming direction, never as fine individual strands. Eyes are large, round and glossy with a clear iris, a dark pupil and a single soft catchlight — identical size, color and spacing in every panel. Small rounded ears, short muzzle with a small dark nose, two small pointed fangs just visible at the upper lip, thin light whiskers. Warm, alert, friendly expression, mouth closed in a small natural smile. Body proportions from the attached photographs: a very large rounded head, roughly a third of her total height, sitting on a soft pear-shaped body with a wide low belly and short stubby legs. Standing upright on her hind legs, bipedal, arms relaxed down at her sides — NOT a T-pose, NOT arms outstretched, NOT arms raised. She has a short, broad, low-hanging tail — a rounded paddle shape, wider than long, narrow at the base and widening to a soft rounded end that hangs down almost to the ground. NOT long, NOT thin, NOT raised, NOT extended backward. Deep forest green like her back, with a pale cream abstract zigzag marking across its outer surface.
 
 Panel layout, left to right, all three showing the same single character at identical scale, proportions and lighting: LEFT — full-body three-quarter view, head to feet, turned about 45 degrees, showing the profile of the muzzle and the depth of the body. CENTER — full-body front view, head to feet, standing upright facing camera, arms relaxed at sides, feet flat and slightly apart. RIGHT — tight close-up portrait of her head and upper chest, looking straight into camera, face identical to the center panel.
 
@@ -109,7 +115,8 @@ She is a living animated character, NOT a mascot costume and NOT a person in a s
 | Pelaje en formas grandes, no en hebras | Es lo que peor sobrevive a 720p + escalado ×2 |
 | Ojos idénticos en los tres paneles, dicho explícito | El fallo de `[08:04]`: la cara del primer plano no coincidía con la del cuerpo entero, y eso rompe los videos después |
 | Negativos contra la botarga | Las fotos son de un traje de felpa. Sin bloquearlo, el modelo copia costuras, cierre y máscara rígida |
-| **Con cola** | Decidido por Samuel el 2026-09-08. Es la única parte del personaje donde manda el modelo 3D: ninguna foto del traje la muestra, así que no hay otra fuente |
+| **Con cola, corta y baja** | Foto del traje, 2026-09-08. Corrige la primera versión, que la describía larga y levantada copiando el modelo 3D |
+| Negativos contra correa y costura | La foto de espaldas muestra una correa vertical y la línea del cierre: son estructura del traje, no del personaje |
 | Paneles frontal / ¾ / cara | Son las tres vistas de las que hay foto real. El tutorial usa espalda, pero acá no hay referencia de la espalda y el modelo la inventaría |
 | Nada de texto ni de overlay de Blender | *"Clean your plate"* `[12:01]` |
 | El color va aparte | Color transfer `[08:55]`, para que forma y paleta no compitan como dos referencias |
