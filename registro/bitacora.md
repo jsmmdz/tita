@@ -163,3 +163,41 @@ Mismos cuatro `media_id` de la ronda 1. 16:9, `count: 2`, `use_unlim` sin poner.
 5. ¿Personaje o botarga — costuras, cierre, borde de máscara?
 
 **Veredicto:** _(pendiente)_
+
+---
+
+## 2026-09-08 — Ronda 3: outfits sobre `@TITA`
+
+**Hito:** `@tita` existe como Element — `TITA`,
+`7189d8d4-c405-4a57-a505-7852b5099154`, construido sobre el job `9aee2abf`
+(variante B de Nano, ronda 2, cola corta). Ese es el canon del personaje.
+
+**Método:** cada outfit es una **edición de la hoja de personaje**, no un
+personaje nuevo. Mismos paneles, mismo fondo, misma luz; cambia solo el
+vestuario. Es como el tutorial hace la versión de incógnito `[06:05]`.
+
+**Motor:** `nano_banana_pro`, 2K, 16:9, `count: 2`. Elegido sobre Seedream por
+dos razones: al editar, Nano conserva mejor la cara `[06:33]`, y
+**`seedream_v5_pro` no acepta Elements**.
+
+| Outfit | Jobs |
+|---|---|
+| Navidad — traje completo de Santa | `e9ca791c-26c7-42c2-8c51-9a9ca77c991c` · `e3fcf0af-fae3-4be6-b326-fed775b60cd0` |
+| Halloween — bruja | `0ea9941b-d8db-454f-975c-b081de0f4a1c` · `bb39580e-6a39-4151-913d-2013c9b8bd9a` |
+| Halloween — calabaza | `97f44166-8fda-47ee-b537-a9354004856b` · `4647f4db-5c92-4cc9-97c6-cde5cce2c006` |
+
+Prompts completos en `visuales/prompts/02-outfits.md`.
+
+**Dos cosas que se aprendieron y valen para todo lo que sigue:**
+
+1. **`nano_banana_pro` sí ruteó bien esta vez.** En las rondas 1 y 2 pedí
+   `nano_banana_pro` y el backend registró `nano_banana_2` en las seis. Acá,
+   con el Element embebido en el prompt, quedó `nano_banana_pro`. La
+   comparación Nano-vs-Seedream de las rondas 1 y 2 **no fue contra Nano Pro**.
+2. **Prompts cortos.** La ronda 2 salió peor que la 1 por exceso de negativos.
+   Estos van en descripción positiva con un solo renglón de negativos.
+
+**Qué mirar:** que la cara no haya derivado. Si la Tita del outfit no es la
+misma Tita, el outfit no sirve por bonito que esté el traje.
+
+**Veredicto:** _(pendiente)_

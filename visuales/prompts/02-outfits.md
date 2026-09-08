@@ -1,0 +1,96 @@
+# Outfits de Tita
+
+Variantes de vestuario sobre `@tita`. **Cada una es una edición de la hoja de
+personaje, no un personaje nuevo** — es como el tutorial hace la versión de
+incógnito de su protagonista `[06:05]`: misma hoja, mismo fondo, misma luz,
+mismos paneles, y se cambia solo el vestuario. Eso es lo que mantiene la
+geometría idéntica entre outfits.
+
+## El elemento base
+
+| Dato | Valor |
+|---|---|
+| Nombre | `TITA` |
+| `element_id` | `7189d8d4-c405-4a57-a505-7852b5099154` |
+| Categoría | `character` |
+| Origen | Job `9aee2abf-0ecf-4b29-b5e6-ede75207c2f1` — variante B de Nano, ronda 2, cola corta |
+
+**Cómo se usa:** se embebe `<<<7189d8d4-c405-4a57-a505-7852b5099154>>>` dentro
+del texto del prompt. El backend inyecta la imagen y lo reescribe a `@TITA`.
+
+> ⚠️ **`seedream_v5_pro` NO acepta Elements.** Los modelos que sí:
+> `nano_banana_pro`, `nano_banana_2`, `gpt_image_2`, `seedream_v4_5`,
+> `seedream_v5_lite`, `cinematic_studio_2_5`. El Seedream que veníamos usando
+> para la comparación queda fuera del flujo de outfits.
+
+## Por qué Nano Banana Pro y no Seedream
+
+El tutorial dice que Seedream es lo mejor para vestuario `[03:32]`, pero
+también que al editar **Nano conserva mejor la cara y Seedream mejor la tela**
+`[06:33]`. Acá lo que no se puede perder es Tita, no el terciopelo. Y Seedream
+5.0 Pro ni siquiera es opción por lo de arriba.
+
+## La regla de color que gobierna estos outfits
+
+**Tita es verde bosque muy oscuro.** Eso decide qué funciona:
+
+- **El rojo navideño funciona solo.** Rojo sobre verde oscuro es la paleta
+  navideña; no hay que forzar nada.
+- **El negro de Halloween se funde.** Contra un pelaje casi negro, el negro
+  desaparece y la silueta se vuelve una mancha. Por eso **el naranja hace todo
+  el trabajo**: cada borde negro lleva ribete naranja, y el forro de la capa es
+  naranja entero.
+
+## Los tres outfits
+
+### Navidad — traje completo de Santa
+
+Elegido por Samuel sobre la opción de solo accesorios. **Costo asumido:** la
+chaqueta tapa el panel crema del pecho, que es la mitad de la silueta de Tita.
+Mitigación dentro del prompt: cara, orejas, bigotes, patas rosadas y cola
+quedan descubiertos, y la cabeza sigue siendo un tercio de la altura — que es
+donde vive la identidad.
+
+```text
+Edit the attached three-panel character reference sheet of <<<7189d8d4-c405-4a57-a505-7852b5099154>>>. Keep everything about her identical: the same three panels in the same order, the same body proportions, the same large head, the same face, the same emerald-green eyes, the same cream muzzle, the same pink nose and paws, the same short low tail, the same grey seamless background, the same soft shadowless studio lighting and the same camera framing. Change exactly one thing: she is now dressed as Santa Claus. Outfit, applied consistently in all three panels: a rich crimson-red velvet Santa jacket, cut short and tailored to her round pear-shaped body, with thick soft white plush trim at the collar, cuffs and hem; a wide black leather belt with a large square gold buckle at her waist; matching crimson-red velvet trousers with white plush cuffs, ending above her ankles; and a crimson-red Santa hat with a white plush band and a big white pompom, flopping softly to one side over one ear. Her feet stay bare pink paws, no boots. Her face, ears, whiskers and tail remain completely uncovered and unchanged. The red velvet reads as large soft shapes with gentle sheen. Warm friendly expression, mouth closed in a small natural smile, arms relaxed at her sides. Studio-grade 3D animation render, appealing feature-animation quality, 4K. No text, no logos, no props, one character only.
+```
+
+### Halloween — bruja
+
+Sombrero puntudo y capa corta. La silueta del sombrero se lee en miniatura, y
+el ribete naranja evita que el negro se coma el contorno.
+
+```text
+Edit the attached three-panel character reference sheet of <<<7189d8d4-c405-4a57-a505-7852b5099154>>>. Keep everything about her identical: the same three panels in the same order, the same body proportions, the same large head, the same face, the same emerald-green eyes, the same cream muzzle, the same pink nose and paws, the same short low tail, the same grey seamless background, the same soft shadowless studio lighting and the same camera framing. Change exactly one thing: she is now dressed as a friendly cartoon witch. Outfit, applied consistently in all three panels: a tall pointed witch hat with a wide floppy brim, its crown bending forward at the tip, black with a broad bright pumpkin-orange band around the base and an orange edge along the brim, sitting between her ears; and a short black cape reaching to her waist, fastened at the throat with a round orange clasp, its whole inner lining bright pumpkin orange so the orange is always visible where the cape opens and where the edges turn. Every edge of the black cape and hat carries a clear orange trim line, so the black never merges with her dark green fur. Her cream belly panel stays visible below the short cape. Her face, ears, whiskers and tail remain completely uncovered and unchanged. Cheerful and playful, not scary, mouth closed in a small natural smile, arms relaxed at her sides. Studio-grade 3D animation render, appealing feature-animation quality, 4K. No text, no logos, no broom, no props, one character only.
+```
+
+### Halloween — calabaza
+
+Máximo contraste contra el verde. Tapa el torso, pero deja fuera la cabeza
+entera, los brazos, las piernas y la cola. **Sin cara tallada:** una calabaza
+con ojos compite con la cara de Tita y el cuadro queda con dos caras.
+
+```text
+Edit the attached three-panel character reference sheet of <<<7189d8d4-c405-4a57-a505-7852b5099154>>>. Keep everything about her identical: the same three panels in the same order, the same large head, the same face, the same emerald-green eyes, the same cream muzzle, the same pink nose, the same grey seamless background, the same soft shadowless studio lighting and the same camera framing. Change exactly one thing: her body is now inside a padded pumpkin costume. The costume is a big round soft pumpkin shell in bright saturated orange, with gentle vertical ribbing running from top to bottom, worn over her torso from just under her chin down to her hips, so it reads as a plump round pumpkin body. A short stubby curled green stem and one small green leaf sit at the top of the shell, just below her chin. Her arms and legs come out of the shell and stay her own deep forest green fur, her paws stay pink, and her short low tail stays visible below the shell at the back. Her whole head, face, ears and whiskers stay completely uncovered and unchanged above the costume, and the orange shell contrasts strongly against her dark green fur. Cheerful and playful, not scary, mouth closed in a small natural smile, arms relaxed at her sides. Studio-grade 3D animation render, appealing feature-animation quality, 4K. No text, no logos, no carved face on the pumpkin, no jack-o-lantern features, no props, one character only.
+```
+
+## Lección aplicada: prompts cortos
+
+La ronda 2 de la hoja de personaje salió peor que la 1, y la causa probable
+fue **exceso de negativos**: seis menciones en negativo de la cola y cuatro
+formas de decir "sin logo". Nombrar algo en negativo hace que el modelo le
+preste atención igual, y el prompt creció tanto que el bloque de paneles quedó
+al final, donde pesa menos.
+
+Estos tres prompts van a la inversa: **descripción positiva, un solo renglón de
+negativos al cierre.** Es la densidad que usan los prompts del tutorial.
+
+## Después de generar
+
+1. **Batear y cosechar.** Dos variantes por outfit; una de cada cuatro sirve
+   `[14:34]`.
+2. **Verificar que la cara no derivó.** Es lo único que no se puede perder: si
+   la Tita del outfit no es la misma Tita, el outfit no sirve.
+3. **Subir la aprobada como su propio elemento** — `TITA-navidad`,
+   `TITA-bruja`, `TITA-calabaza` — para poder invocarla igual que `@TITA`.
+4. **Fila en `../../registro/bitacora.md`.**
