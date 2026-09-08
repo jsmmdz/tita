@@ -197,7 +197,39 @@ Prompts completos en `visuales/prompts/02-outfits.md`.
 2. **Prompts cortos.** La ronda 2 salió peor que la 1 por exceso de negativos.
    Estos van en descripción positiva con un solo renglón de negativos.
 
-**Qué mirar:** que la cara no haya derivado. Si la Tita del outfit no es la
-misma Tita, el outfit no sirve por bonito que esté el traje.
+### Comparación con Seedream 4.5
+
+Samuel señaló que **Seedream es mejor para ropa**, y tiene razón: está en la
+transcripción — *"Seedream Pro 5.0, it's one of the best models for outfits,
+especially when feeding in your own inputs"* `[03:32]`.
+
+Pero **`seedream_v5_pro` no acepta Elements**, así que no puede ver a `@TITA`.
+El Seedream más alto que sí los acepta es **4.5**. Se corrieron los tres
+outfits ahí con los prompts idénticos, para que el único cambio sea el motor.
+
+| Outfit | Nano Banana Pro `2k` | Seedream 4.5 `basic` |
+|---|---|---|
+| Santa | `e9ca791c` · `e3fcf0af` | `4c7c4898-1fb2-413d-8f11-ab9d300c0752` · `c8073c89-3b3b-4515-85a8-117c0551804b` |
+| Bruja | `0ea9941b` · `bb39580e` | `242887bb-e83a-49f0-bf3e-6e5046c742d6` · `16c5fa77-9d65-49b2-ab05-2c16361166a9` |
+| Calabaza | `97f44166` · `4647f4db` | `17ede455-5d09-4714-9ecd-02a89515e9a0` · `38abfb48-c0d0-46b9-901e-653c3d4c6581` |
+
+**Esta sí es la comparación limpia que las rondas 1 y 2 no fueron:** mismo
+prompt, mismo Element, mismos tres paneles, y los dos modelos confirmados en la
+respuesta del servidor. Doce imágenes en total.
+
+**Qué mirar, en este orden:**
+
+1. **¿La cara sigue siendo Tita?** Es lo único que no se puede perder. Según el
+   tutorial, acá gana Nano `[06:33]`.
+2. **¿La tela se ve bien?** Terciopelo, felpa blanca, forro naranja. Acá
+   debería ganar Seedream `[06:33]`.
+3. **¿Los tres paneles calzan entre sí?**
+4. **¿El negro de Halloween se fundió con el verde, o el ribete naranja lo
+   salvó?**
+
+Lo esperable, si el tutorial acierta, es un empate dividido: **Nano para la
+cara, Seedream para el traje.** Y si sale así, el camino es el mismo que usa el
+autor con el face swap `[05:30]`: *"don't try to get everything out of one
+model"* — tomar el traje de Seedream y la cara de Nano.
 
 **Veredicto:** _(pendiente)_
