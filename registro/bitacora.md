@@ -66,3 +66,58 @@ Acá van los valores que ya se aprobaron y no se vuelven a discutir.
 - **Los nombres de los programas.** Ninguno verificado contra la página oficial.
   Es el pendiente más urgente.
 - **Si Giselle aguanta el lema.** Filtro sin correr.
+
+---
+
+## 2026-09-08 — Ronda visual 1: hoja de personaje `@tita`
+
+**Qué se probó:** el mismo prompt de hoja de personaje en dos motores, para
+decidir cuál sostiene la estructura de tres paneles. Es el método de `[04:30]`
+del tutorial: mismo prompt, dos modelos, se compara.
+
+**Prompt:** `visuales/prompts/01-hoja-personaje-tita.md`. Tres paneles —
+frontal, tres cuartos y primer plano de cara. Sin cola.
+
+**Adjuntos:** cuatro imágenes subidas por Samuel.
+
+| media_id | Archivo |
+|---|---|
+| `7f1c447b-989c-41af-9955-e641d77a2e98` | Captura 2026-09-07 225224 |
+| `c8a198d0-cda4-44b2-acd4-2832ece22abe` | Captura 2026-09-07 225231 |
+| `809937c2-7094-4b51-b2c5-dd135116e9d2` | Captura 2026-09-07 233602 |
+| `2a82cd2e-97ae-45b8-a78e-98d3da74ed8d` | Captura 2026-09-07 234219 |
+
+> **No está confirmado cuáles son fotos del traje y cuáles renders 3D.** El
+> prompt se blindó por eso: dice que las fotos del traje mandan en identidad y
+> color, y que cualquier render gris sirve solo para silueta — nunca para los
+> ojos, que son verdes y no violeta.
+
+**Las dos generaciones:**
+
+| Motor | `model` | Resolución | Aspect | Job |
+|---|---|---|---|---|
+| Nano Banana Pro | `nano_banana_pro` | `2k` | 16:9 | `116ad652-9dd9-40b3-a60c-a7c12c255c98` |
+| Seedream 5.0 Pro | `seedream_v5_pro` | `1.5k` | 16:9 | `f7d0ffac-f460-45cd-9332-341057495e13` |
+
+`count: 1` cada uno, `use_unlim` sin poner. Saldo antes: **1838,73 créditos**,
+plan Ultra.
+
+**Resoluciones reales del catálogo** — consultadas, no supuestas:
+
+- `nano_banana_pro`: `1k` · `2k` · `4k`
+- `seedream_v5_pro`: `1k` · `1.5k` · `2k`
+- `seedance_2_0` (video): `480p` · `720p` · `1080p` · `4k`. **No tiene 1.5K.**
+
+**Qué mirar en el resultado:**
+
+1. ¿Los tres paneles calzan en escala, luz y ojos? Es lo que decide si sirve
+   como hoja. Nano Banana Pro debería ganar acá `[03:32]`.
+2. ¿Los ojos salieron verdes o se colaron los violeta del modelo 3D?
+3. ¿Se lee como personaje animado o como botarga — costuras, cierre, borde de
+   máscara?
+4. ¿Respetó "sin cola"?
+5. ¿Se coló el gorro de fiesta, el letrero o alguna persona de fondo? Las fotos
+   fueron **sin limpiar la placa**, así que esto es lectura de primera ronda y
+   no el asset final.
+
+**Veredicto:** _(pendiente — no se ha mirado el resultado)_
