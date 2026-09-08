@@ -120,4 +120,46 @@ plan Ultra.
    fueron **sin limpiar la placa**, así que esto es lectura de primera ronda y
    no el asset final.
 
-**Veredicto:** _(pendiente — no se ha mirado el resultado)_
+**Veredicto: invalidada por la fuente, no por el motor.** La cola se describió
+larga, levantada y extendida hacia atrás, copiando el modelo 3D. La foto del
+traje que Samuel pasó después muestra lo contrario. Las dos generaciones de
+esta ronda pedían un personaje equivocado, así que no dicen nada sobre qué
+motor es mejor.
+
+---
+
+## 2026-09-08 — Ronda visual 2: hoja de personaje, cola corregida
+
+**Qué cambió respecto de la ronda 1:**
+
+1. **La cola.** De "larga como el cuerpo, extendida y levantada" a **corta,
+   ancha y baja** — paleta redondeada que cuelga y casi roza el piso. Fuente:
+   foto del traje, 2026-09-08.
+2. **La cola va lisa.** La marca blanca **es el logo de la Universidad El
+   Bosque**. Decisión de Samuel: no se genera, se compone en edición. Los
+   negativos prohíben explícitamente cualquier marca, letra o emblema encima.
+3. **Negativos nuevos** contra la correa vertical de la espalda y la línea del
+   cierre, visibles en la foto trasera: son estructura del traje.
+4. **Dos variantes por motor** en vez de una, según *"batch a ton and cut the
+   best parts together"* `[21:10]`.
+
+| Motor | `model` | Resolución | Jobs |
+|---|---|---|---|
+| Nano Banana Pro | `nano_banana_pro` | `2k` | `10e45bf9-883c-4151-8b73-96c657d67a28` · `9aee2abf-0ecf-4b29-b5e6-ede75207c2f1` |
+| Seedream 5.0 Pro | `seedream_v5_pro` | `1.5k` | `757d01c6-6231-4cb7-a9fe-83f3d9021a6f` · `a6dc5ae0-76fc-4706-8c18-432fd5429f86` |
+
+Mismos cuatro `media_id` de la ronda 1. 16:9, `count: 2`, `use_unlim` sin poner.
+
+> ⚠️ **Las fotos de la cola NO están subidas como `media_id`.** La cola va
+> descrita solo con texto y el modelo no la ve. Es la parte más frágil de esta
+> ronda: si la cola no calza, la causa probable es esa y no el motor.
+
+**Qué mirar:**
+
+1. ¿Los tres paneles calzan en escala, luz y ojos?
+2. ¿La cola salió corta y baja, o volvió a salir larga?
+3. ¿Quedó lisa, o el modelo le inventó una marca encima?
+4. ¿Ojos verdes o se colaron los violeta del modelo 3D?
+5. ¿Personaje o botarga — costuras, cierre, borde de máscara?
+
+**Veredicto:** _(pendiente)_

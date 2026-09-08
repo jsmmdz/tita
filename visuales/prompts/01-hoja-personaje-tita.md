@@ -74,13 +74,29 @@ El prompt no arregla una referencia mala. Los renders tienen que salir así:
 > resto. La generación de Nano Banana Pro del 2026-09-08 se corrió con la
 > descripción vieja y **queda invalidada por la fuente**, no por el motor.
 >
-> ⚠️ **La marca blanca de la cola está sin identificar.** La cola lleva encima
-> unos trazos blancos en zigzag, claros y deliberados. No se sabe si son letras
-> estilizadas, un motivo gráfico institucional o marcas de pelaje del diseño.
-> **No se inventa:** hasta que Samuel confirme qué son, el prompt las describe
-> como marca abstracta. Si resultan ser letras, hay que escribir el texto
-> exacto — un logo mal dibujado en pieza institucional es el equivalente visual
-> de decir mal el nombre de un programa.
+> ### El logo de la UEB va en la cola — y se compone en edición
+>
+> La marca blanca de la cola **es el logo de la Universidad El Bosque**.
+> Confirmado por Samuel, 2026-09-08.
+>
+> **Decisión: la hoja se genera con la cola verde lisa y el logo se compone en
+> edición.** Ningún modelo lo dibuja. Las razones:
+>
+> - Un logo institucional reconstruido de una foto borrosa **es un problema de
+>   marca**, no un defecto estético. El tutorial lo dice sin rodeos: el emblema
+>   se define como elemento propio con detalle obsesivo, nunca se deja
+>   reconstruir de memoria `[27:32]`.
+> - **La cola es chica en cuadro y en video se mueve.** Un logo pequeño en
+>   movimiento es lo primero que se rompe. En el proyecto Cartier el criterio
+>   era que un emblema aguanta a partir de unos 60 px de alto en cuadro; por
+>   debajo no se pide. La cola de Tita casi nunca va a llegar a eso.
+>
+> Consecuencia para el prompt: **la cola va verde lisa y los negativos prohíben
+> explícitamente cualquier marca, letra o logo sobre ella.** Es más seguro pedir
+> superficie limpia que pedir un logo y corregirlo después.
+>
+> Pendiente: conseguir el archivo oficial del logo de la UEB para la
+> composición.
 
 ---
 
@@ -94,7 +110,7 @@ Three-panel character reference sheet on one seamless canvas, based on the 3D ch
 
 Coloring, taken from the attached costume photographs and treated as canon: deep forest green fur covering the back, flanks, outer ears, arms, legs and the top of the head, the green wrapping around the eyes as a mask that narrows toward the muzzle — a rich saturated dark green that reads almost black in shade and clearly green in sunlight. A broad warm cream panel runs from under the chin down the chest and across the belly in one continuous rounded shape. The muzzle and cheeks are the same warm cream, wide and softly rounded. The nose is large, rounded and pale salmon pink. Inner ears pale salmon pink. Hands and feet pale salmon pink with four soft digits each. Eyes very large and round with a white sclera, a bright emerald-green iris, a dark pupil and a single white catchlight. Above each eye, three short curved cream brow strokes. Long dark brown whiskers, three to a side.
 
-Fur is rendered as soft short plush with visible large-scale grooming direction, never as fine individual strands. Eyes are large, round and glossy with a clear iris, a dark pupil and a single soft catchlight — identical size, color and spacing in every panel. Small rounded ears, short muzzle with a small dark nose, two small pointed fangs just visible at the upper lip, thin light whiskers. Warm, alert, friendly expression, mouth closed in a small natural smile. Body proportions from the attached photographs: a very large rounded head, roughly a third of her total height, sitting on a soft pear-shaped body with a wide low belly and short stubby legs. Standing upright on her hind legs, bipedal, arms relaxed down at her sides — NOT a T-pose, NOT arms outstretched, NOT arms raised. She has a short, broad, low-hanging tail — a rounded paddle shape, wider than long, narrow at the base and widening to a soft rounded end that hangs down almost to the ground. NOT long, NOT thin, NOT raised, NOT extended backward. Deep forest green like her back, with a pale cream abstract zigzag marking across its outer surface.
+Fur is rendered as soft short plush with visible large-scale grooming direction, never as fine individual strands. Eyes are large, round and glossy with a clear iris, a dark pupil and a single soft catchlight — identical size, color and spacing in every panel. Small rounded ears, short muzzle with a small dark nose, two small pointed fangs just visible at the upper lip, thin light whiskers. Warm, alert, friendly expression, mouth closed in a small natural smile. Body proportions from the attached photographs: a very large rounded head, roughly a third of her total height, sitting on a soft pear-shaped body with a wide low belly and short stubby legs. Standing upright on her hind legs, bipedal, arms relaxed down at her sides — NOT a T-pose, NOT arms outstretched, NOT arms raised. She has a short, broad, low-hanging tail — a rounded paddle shape, wider than long, narrow at the base and widening to a soft rounded end that hangs down almost to the ground. NOT long, NOT thin, NOT raised, NOT extended backward. Deep forest green like her back, completely plain and unmarked — no marking, no pattern, no emblem, no lettering.
 
 Panel layout, left to right, all three showing the same single character at identical scale, proportions and lighting: LEFT — full-body three-quarter view, head to feet, turned about 45 degrees, showing the profile of the muzzle and the depth of the body. CENTER — full-body front view, head to feet, standing upright facing camera, arms relaxed at sides, feet flat and slightly apart. RIGHT — tight close-up portrait of her head and upper chest, looking straight into camera, face identical to the center panel.
 
@@ -117,6 +133,7 @@ She is a living animated character, NOT a mascot costume and NOT a person in a s
 | Negativos contra la botarga | Las fotos son de un traje de felpa. Sin bloquearlo, el modelo copia costuras, cierre y máscara rígida |
 | **Con cola, corta y baja** | Foto del traje, 2026-09-08. Corrige la primera versión, que la describía larga y levantada copiando el modelo 3D |
 | Negativos contra correa y costura | La foto de espaldas muestra una correa vertical y la línea del cierre: son estructura del traje, no del personaje |
+| **Cola lisa, sin logo** | El logo de la UEB va en la cola pero se compone en edición. Pedirlo generado es pedir un logo institucional derretido |
 | Paneles frontal / ¾ / cara | Son las tres vistas de las que hay foto real. El tutorial usa espalda, pero acá no hay referencia de la espalda y el modelo la inventaría |
 | Nada de texto ni de overlay de Blender | *"Clean your plate"* `[12:01]` |
 | El color va aparte | Color transfer `[08:55]`, para que forma y paleta no compitan como dos referencias |
