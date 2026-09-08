@@ -21,6 +21,8 @@ igual sin depender de la memoria de nadie.
 | `voces/catalogo.md` | Las 114 voces preset de Higgsfield con su `voice_id`. |
 | `investigacion/modelos-y-flujo.md` | Qué modelo usar, cuánto cuesta y cómo correr las pruebas. |
 | `referencias/README.md` | Cómo se registran los audios de referencia (por ruta, no por archivo). |
+| `referencias/higgsfield/` | **La técnica de Higgsfield**, extraída del tutorial oficial: transcripción, prompts, parámetros de la interfaz. |
+| `visuales/FLUJO-VISUAL.md` | **Cómo se ve Tita en cuadro.** El método visual, adaptado del flujo de Higgsfield. |
 | `registro/bitacora.md` | Qué se generó, con qué parámetros y qué resultó. |
 | `guiones/` | **La serie de cortos.** Un capítulo por facultad, más el de presentación. |
 | `guiones/PRUEBA-01.md` | Cómo grabar y convertir el primer capítulo a la voz de Giselle. |
