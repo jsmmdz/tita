@@ -7,8 +7,36 @@
 |---|---|
 | Motor | **Nano Banana Pro** — reproduce fielmente el adjunto y sostiene la estructura de hoja `[03:32]` |
 | Aspect ratio | **16:9** |
-| Adjuntos | Los renders limpios de Blender |
-| Paleta | Por **color transfer** con una ilustración, no por adjunto `[08:55]` |
+| Adjuntos | **Las fotos del traje real** (identidad) + los renders limpios de Blender (geometría) |
+| Paleta | Sale de las fotos del traje. El color transfer `[08:55]` la fija para toda la serie |
+
+---
+
+## Quién manda: el traje, no el modelo 3D
+
+Son dos Titas distintas, y hay que elegir una.
+
+| | **Traje real** | **Modelo 3D** |
+|---|---|---|
+| Ojos | **Verde esmeralda**, grandes, esclerótica blanca | Violeta |
+| Color | Verde bosque oscuro + panel crema | Gris sin texturizar |
+| Cabeza | Grande respecto del cuerpo, hocico ancho y redondo | Chica, hocico corto, cuerpo esbelto |
+| Cejas | Tres trazos crema sobre cada ojo | No tiene |
+
+**Manda el traje.** Es la Tita que la comunidad de la UEB reconoce, y esta es
+una pieza institucional: la identidad no se rediseña de paso. El modelo 3D
+queda como **ayuda de geometría** —vistas limpias, alineadas, repetibles— pero
+si las proporciones pelean, gana la foto.
+
+> **Y hay que decirle explícitamente que NO es un disfraz.** Las fotos son de
+> un traje de felpa: costuras, cierre, brillo de tela, la máscara rígida de la
+> cara. Un modelo generativo copia todo eso. El prompt lo bloquea con negativos
+> explícitos — se quiere un personaje animado, no una botarga.
+
+> **Antes de subir las fotos a Higgsfield, recórtalas a Tita.** En las dos hay
+> estudiantes y asistentes identificables de fondo, y en una hay un gorro de
+> fiesta que no es parte del personaje. Es *"clean your plate"* `[12:01]` y de
+> paso evita meter caras de terceros en un asset de producción.
 
 ---
 
@@ -37,16 +65,13 @@ El prompt no arregla una referencia mala. Los renders tienen que salir así:
 
 ## El prompt
 
-> **Falta un dato y va marcado `[COLOR]`.** No hay ninguna descripción del
-> color de Tita en el repo y las ilustraciones no están acá. Reemplazá ese
-> bloque por el pelaje real —dorso, vientre, hocico, orejas, punta de la cola—
-> antes de correrlo. Si no, Nano Banana Pro se lo inventa y esa invención queda
-> de canon en los once capítulos.
+> **El color sale de las fotos del traje.** Está escrito abajo en el bloque de
+> pelaje; si algo no coincide con el traje real, manda el traje.
 
 ```text
 Three-panel character reference sheet on one seamless canvas, based on the 3D character in the attached renders — a stylized cartoon weasel character. Replicate her geometry 1:1 from the attached renders: exact same head shape, muzzle length, eye size and spacing, ear shape and placement, neck length, torso proportions, limb length, paw shape, tail length and thickness, and overall head-to-body ratio. The silhouette must not be reinterpreted and the geometry must not be redrawn from memory — the attached renders are the authority on form. Only the surface changes: the grey untextured clay of the renders becomes finished fur and color.
 
-[COLOR] — describe here: fur color of the back and flanks, belly and chest, muzzle and cheeks, inner ears, paws, and tail tip; eye iris color; whether there are markings.
+Coloring, taken from the attached costume photographs and treated as canon: deep forest green fur covering the back, flanks, outer ears, arms, legs and the top of the head, the green wrapping around the eyes as a mask that narrows toward the muzzle — a rich saturated dark green that reads almost black in shade and clearly green in sunlight. A broad warm cream panel runs from under the chin down the chest and across the belly in one continuous rounded shape. The muzzle and cheeks are the same warm cream, wide and softly rounded. The nose is large, rounded and pale salmon pink. Inner ears pale salmon pink. Hands and feet pale salmon pink with four soft digits each. Eyes very large and round with a white sclera, a bright emerald-green iris, a dark pupil and a single white catchlight. Above each eye, three short curved cream brow strokes. Long dark brown whiskers, three to a side.
 
 Fur is rendered as soft short plush with visible large-scale grooming direction, never as fine individual strands. Eyes are large, round and glossy with a clear iris, a dark pupil and a single soft catchlight — identical size, color and spacing in every panel. Small rounded ears, short muzzle with a small dark nose, two small pointed fangs just visible at the upper lip, thin light whiskers. Warm, alert, friendly expression, mouth closed in a small natural smile. Standing upright on her hind legs, bipedal, arms relaxed down at her sides — NOT a T-pose, NOT arms outstretched, NOT arms raised. Long thick tail clearly visible.
 
@@ -54,7 +79,7 @@ Panel layout, left to right, all three showing the same single character at iden
 
 Studio-grade 3D animation render, appealing modern feature-animation character language — NOT photoreal, NOT flat 2D cartoon, NOT a plush toy, NOT a clay or plasticine figure. Clean neutral mid-grey seamless background with no horizon line, no gradient and no vignette. Soft even shadowless illumination arriving from all directions, no key light, no rim light, no hard shadows on the character or the ground, no specular hotspots. Subtle soft contact shadow under each pose. Thin light divider lines between the three panels. Deep focus, whole figure sharp in every panel.
 
-No clothing, no accessories, no props, no text, no letters, no numbers, no labels, no watermarks, no logos, no grid lines, no axis lines, no 3D cursor, no viewport overlay, no user interface elements, no measurement guides. Nothing in the frame except the three panels of the character on the grey background. 16:9.
+She is a living animated character, NOT a mascot costume and NOT a person in a suit: no fabric seams, no zippers, no stitching, no visible suit openings, no rigid mask edge around the face, no velvet or velour sheen, no foam padding shape. No clothing, no hats, no party hats, no accessories, no props, no text, no letters, no numbers, no labels, no watermarks, no logos, no grid lines, no axis lines, no 3D cursor, no viewport overlay, no user interface elements, no measurement guides. Nothing in the frame except the three panels of the character on the grey background. 16:9.
 ```
 
 ---
@@ -68,6 +93,8 @@ No clothing, no accessories, no props, no text, no letters, no numbers, no label
 | `geometry must not be redrawn from memory` | El seguro contra el modelo que reconstruye en vez de copiar el adjunto |
 | Pelaje en formas grandes, no en hebras | Es lo que peor sobrevive a 720p + escalado ×2 |
 | Ojos idénticos en los tres paneles, dicho explícito | El fallo de `[08:04]`: la cara del primer plano no coincidía con la del cuerpo entero, y eso rompe los videos después |
+| Negativos contra la botarga | Las fotos son de un traje de felpa. Sin bloquearlo, el modelo copia costuras, cierre y máscara rígida |
+| La cola, sin foto | **Ninguna de las dos fotos la muestra.** Sale del render lateral de Blender, que es la única fuente que hay |
 | Nada de texto ni de overlay de Blender | *"Clean your plate"* `[12:01]` |
 | El color va aparte | Color transfer `[08:55]`, para que forma y paleta no compitan como dos referencias |
 
