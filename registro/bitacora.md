@@ -233,3 +233,53 @@ autor con el face swap `[05:30]`: *"don't try to get everything out of one
 model"* — tomar el traje de Seedream y la cara de Nano.
 
 **Veredicto:** _(pendiente)_
+
+
+---
+
+## 2026-09-08 — Rondas 4 a 6: el guardarropa
+
+Dieciocho outfits generados sobre el Element `TITA`, todos como ediciones de la
+hoja de personaje. Detalle completo, prompts y `job_id` en
+`visuales/prompts/02-outfits.md`.
+
+| Tanda | Qué | Motor | Res |
+|---|---|---|---|
+| 3 | Santa · bruja · calabaza | `nano_banana_pro` | `2k` |
+| 3b | los mismos tres, comparación | `seedream_v4_5` | `basic` |
+| 3c | los mismos tres, comparación | `seedream_v5_pro` | `2k` |
+| 4 | verde y oro · ruana · fantasma · científica | `seedream_v5_pro` | `2k` |
+| 5 | reno · muñeco de nieve · Frankenstein · Drácula | `seedream_v5_pro` | `2k` |
+| 6 | momia · esqueleto · duende · grado · ángel · Cupido · estudiante | `seedream_v5_pro` | **`1.5k`** |
+
+**Corrección de Samuel:** Seedream va a **1.5K**, no 2K. Las tandas 3c, 4 y 5
+salieron a 2K antes de saberlo. Si hay que rehacerlas, es por eso y no por el
+prompt.
+
+**Límite de tasa:** la tanda 6 devolvió `429 rate_limit_reached` en tres de
+siete llamadas al lanzarlas en paralelo. Reintentadas de a una, pasaron todas.
+**Seedream 5.0 Pro no aguanta siete generaciones simultáneas.**
+
+### Lo que queda pendiente y es lo que más importa
+
+**Ninguno de los dieciocho se ha revisado.** No he podido verlos: el proxy de
+esta sesión bloquea el CDN de Higgsfield (`d8j0ntlcm91z4.cloudfront.net`, 403
+por política), así que las URLs de resultado no se pueden descargar desde acá.
+
+Falta, para cada outfit:
+
+1. Elegir la variante buena de la pareja.
+2. **Verificar que la cara no derivó** respecto de `@TITA`. Es lo único que no
+   se puede perder.
+3. Subir la aprobada como su propio elemento.
+4. Su fila acá con el veredicto.
+
+**Un outfit sin revisar no es un asset.**
+
+### Y sigue sin resolverse la comparación de motores
+
+Los mismos tres outfits corrieron en Nano Banana Pro, Seedream 4.5 y Seedream
+5.0 Pro con prompt idéntico. **Nadie ha mirado el resultado**, así que la
+pregunta de qué motor usar para vestuario sigue abierta. Lo esperable, según el
+tutorial: **Nano para la cara, Seedream para la tela** `[06:33]`, y si sale
+así, se combinan en vez de elegir uno.

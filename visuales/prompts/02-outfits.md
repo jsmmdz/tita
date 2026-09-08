@@ -147,3 +147,88 @@ donde Seedream debería ganarle a Nano `[06:33]`.
 El fantasma es **el más riesgoso para la identidad**: le tapa la cara y deja
 solo los ojos. Si los ojos no salen exactamente los de Tita, no hay nada más
 que la identifique.
+
+
+---
+
+# Tercera tanda — cobertura completa
+
+Samuel pidió **que los disfraces cubran más**. Dos soluciones distintas según
+el disfraz:
+
+- **Pijama con capucha** (reno, muñeco de nieve): el traje la cubre de pies a
+  cabeza y la cabeza del personaje va en la capucha; **su cara real asoma por
+  la abertura** y es lo único de pelaje verde que queda visible.
+- **Cara descubierta, cuerpo tapado** (Frankenstein, Drácula): porque en esos
+  dos la cara *es* el chiste. Frankenstein aprovecha que **el monstruo es verde
+  y ella ya es verde** — su pelaje pasa a ser la piel. Drácula aprovecha que
+  **los colmillos ya los tiene**.
+
+Corridos en `seedream_v5_pro`, 16:9, `count: 2`, referencia `9aee2abf`.
+**A 2K por error** — Samuel corrigió después que Seedream va a 1.5K.
+
+| Disfraz | Jobs |
+|---|---|
+| Reno | `4b7cfb3e-c959-4fad-8eab-385cdaa00a49` · `3bd7441b-0b40-47f1-af56-634ec51b4044` |
+| Muñeco de nieve | `d7631d15-4e43-4467-894f-a970366b2ba8` · `621c54d9-2532-496f-badc-af4032c5fe9d` |
+| Frankenstein | `9128c3bf-6d74-45c6-a7c4-940563afc8c0` · `67545120-06a1-45b6-8c63-515cc7d610dc` |
+| Drácula | `64d8c475-05e7-4df1-9c4c-3ca3986fa55d` · `dd2eaeae-b4ed-4f10-ba99-106730b8237a` |
+
+**Riesgos anotados:** el muñeco de nieve es blanco sobre fondo gris claro y
+puede perder la silueta contra el fondo. Frankenstein puede quedar todo en
+valores bajos —chaqueta negra, camisa gris, pelaje verde oscuro—; si sale como
+mancha, el arreglo es **subir la camisa a gris claro, no aclarar la chaqueta**.
+
+---
+
+# Cuarta tanda — cerrando temporadas y abriendo el calendario
+
+Halloween y Navidad son dos fechas. El calendario de una universidad tiene
+más, y esas piezas se usan más veces al año que los disfraces de temporada.
+
+Corridos en `seedream_v5_pro`, **`1.5k`**, 16:9, `count: 2`, referencia
+`9aee2abf`.
+
+| Disfraz | Fecha | Jobs |
+|---|---|---|
+| Momia | Halloween | `9394780c-ca2e-4001-a38d-8cc190285b7a` · `d48230e3-3679-4c7b-b109-484a64c1b67f` |
+| Esqueleto | Halloween | `551f7382-483f-47c0-9321-747975203613` · `802a5b34-a68c-4e4a-9fc0-658ccd02c4e3` |
+| Duende | Navidad | `cc782b95-9d9d-477a-83bf-49fe86d50e26` · `f34abe04-321e-4dfe-a755-7d96f164fc08` |
+| Grado — toga y birrete | Grados | `dd99f49f-2450-45ee-92eb-d8bcac9c00cc` · `1cd4d2f9-eb84-41ab-9765-b0569892b653` |
+| Ángel del pesebre | Novena | `149b1a50-5fcc-48c4-923b-1632ca2ce300` · `3b89632f-e487-4a13-b334-3296b7c1aa00` |
+| Cupido | Amor y Amistad | `3f6abef3-ba38-4401-9141-7a383deddf9b` · `8ccd1363-3a50-4a65-91d8-cc3a1d0bfade` |
+| Estudiante | Bienvenida | `3a621219-be50-4be2-8a1d-dc7489a4bcbf` · `03f38b07-e451-4cb6-a0f5-bb7552e78fe1` |
+
+**Excluidos por decisión de Samuel:** ambientalista y deportista.
+
+## Tres decisiones de esta tanda
+
+**El ángel del pesebre no es un disfraz obvio.** "Novena" es una tradición, no
+una prenda; la figura vestible más legible del pesebre es el ángel. Si la pieza
+de diciembre no debe llevar carga religiosa, **la ruana y el duende ya cubren
+esa fecha** sin problema.
+
+**Cupido va sin arco ni flecha.** Los props quedan fuera de las hojas de
+personaje: si la hoja lleva un objeto, el objeto se vuelve parte del elemento y
+reaparece en todas las generaciones posteriores.
+
+**Grado y estudiante van sin nada escrito.** La toga lleva una estola verde y
+blanca genérica, y el carnet del estudiante sale **en blanco a propósito**. Los
+colores institucionales reales y el logo van en edición — misma decisión que se
+tomó con el logo de la cola: la identidad de la UEB no se inventa.
+
+---
+
+# El guardarropa completo
+
+Dieciocho outfits generados el 2026-09-08.
+
+| Temporada | Outfits |
+|---|---|
+| **Halloween** (6) | bruja · calabaza · fantasma · científica · Frankenstein · Drácula · momia · esqueleto |
+| **Navidad** (7) | Santa · verde y oro · ruana · reno · muñeco de nieve · duende · ángel del pesebre |
+| **Calendario UEB** (3) | grado · Cupido · estudiante |
+
+**Pendiente en todos:** ninguno se ha revisado. Falta elegir la variante buena
+de cada pareja, verificar que la cara no derivó respecto de `@TITA`, y subir la
+aprobada como su propio elemento. **Un outfit sin revisar no es un asset.**
