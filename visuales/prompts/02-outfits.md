@@ -94,3 +94,56 @@ negativos al cierre.** Es la densidad que usan los prompts del tutorial.
 3. **Subir la aprobada como su propio elemento** — `TITA-navidad`,
    `TITA-bruja`, `TITA-calabaza` — para poder invocarla igual que `@TITA`.
 4. **Fila en `../../registro/bitacora.md`.**
+
+
+---
+
+# Segunda tanda — diseños con criterio
+
+Los tres primeros (Santa, bruja, calabaza) son los obvios. Funcionan, pero
+**no dicen nada sobre Tita ni sobre El Bosque**: cualquier mascota podría
+llevarlos. Estos cuatro salen de algo.
+
+Corridos en `seedream_v5_pro`, `2k`, 16:9, `count: 2`, con el job `9aee2abf`
+como referencia directa.
+
+| Diseño | Jobs |
+|---|---|
+| Navidad · verde y oro | `0590f53f-faec-468d-bd21-09930401f188` · `4d3779a7-daba-415c-b00a-e08ea2a7c10b` |
+| Navidad · ruana | `f551e529-c58a-4235-b6a6-7a773ca98ca1` · `0287a0ed-36b7-42ea-b3d0-21ac6cf90db6` |
+| Halloween · fantasma | `aa4c06cd-c6b5-4ca0-a988-4199d2a2e765` · `2909a611-9c52-4d20-a328-4a0b9d0848ac` |
+| Halloween · científica | `72940b75-408d-46b8-9ab6-3921aa720ecf` · `bf83afce-ba5a-4ada-ad68-cc6acf6cb5e2` |
+
+## La idea detrás de cada uno
+
+**Navidad · verde y oro.** El rojo de Santa pelea con el pelaje de Tita. La
+salida no es pelearlo mejor: es **hacer la Navidad con su propio color.** Capa
+de terciopelo verde más oscuro y saturado que su pelaje —para que se separe—,
+forro y ribete dorados, broche de estrella, corona de pino con bayas rojas
+mínimas. El verde deja de ser el problema y pasa a ser el concepto.
+
+**Navidad · ruana.** El Bosque está en Bogotá y en diciembre hace frío. Una
+ruana de lana crema con franjas roja y verde, en vez de un traje del Polo
+Norte. **El crema sale del panel del pecho de Tita**, así que el outfit nace de
+la paleta del personaje y no de fuera. Es el más local de los cuatro.
+
+**Halloween · fantasma de sábana.** Sábana crema en pliegues grandes, dos
+huecos, y por ahí salen sus ojos verdes. Tres cosas a favor: se lee en
+miniatura —*"the tighter the frame, the less slop"* `[21:00]` premia las formas
+grandes—, **resuelve solo el choque de negro contra verde** porque no hay
+negro, y es el que mejor aguanta el escalado.
+
+**Halloween · científica.** Bata blanca, gafas en la frente, pelaje alborotado,
+tizne en la mejilla. **Es Halloween que además habla de la universidad** —
+Medicina, Odontología, Ciencias, los laboratorios que los guiones ya nombran.
+Un disfraz de bruja no dice nada de El Bosque; este sí. Sin matraz ni props: el
+personaje solo, para que sirva como elemento.
+
+## Qué mirar
+
+Los dos primeros piden **tela**: terciopelo, dorado, lana gruesa. Es justo
+donde Seedream debería ganarle a Nano `[06:33]`.
+
+El fantasma es **el más riesgoso para la identidad**: le tapa la cara y deja
+solo los ojos. Si los ojos no salen exactamente los de Tita, no hay nada más
+que la identifique.
